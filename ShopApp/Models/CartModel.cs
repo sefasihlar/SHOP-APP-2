@@ -2,29 +2,30 @@
 
 namespace ShopApp.WebUI.Models
 {
-    public class CartModel
-    {
-        public int CartId { get; set; }
-        public List<CartItemModel> CartItems { get; set; }
+	public class CartModel
+	{
+		public int CartId { get; set; }
+		public List<CartItemModel> CartItems { get; set; }
 
-        public decimal TotalPrice()
-        {
-            return CartItems.Sum(x => x.Price * x.Quantity);
-        }
+		public int TotalPrice()
+		{
+			return CartItems.Sum(x => x.Price * x.Quantity);
+		}
 
-        public decimal BagTotal()
-        {
-            return CartItems.Sum(x => x.Quantity);
-        }
-    }
-    public class CartItemModel
-    {
-        public int CartItemId { get; set; }
-        public int ProductId { get; set; }
-        public string Name { get; set; }
-        public decimal Price { get; set; }
-        public string ImageUrl { get; set; }
-        public int Quantity { get; set; }
+		public int
+			BagTotal()
+		{
+			return CartItems.Sum(x => x.Quantity);
+		}
+	}
+	public class CartItemModel
+	{
+		public int CartItemId { get; set; }
+		public int ProductId { get; set; }
+		public string Name { get; set; }
+		public int Price { get; set; }
+		public string ImageUrl { get; set; }
+		public int Quantity { get; set; }
 
-    }
+	}
 }

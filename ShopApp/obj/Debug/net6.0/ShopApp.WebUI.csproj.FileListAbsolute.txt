@@ -2352,3 +2352,6 @@ C:\Users\sihla\Masaüstü\MetaAkdeniz\MutluBaharat\ShopApp\obj\Debug\net6.0\scop
 C:\Users\sihla\Masaüstü\MetaAkdeniz\MutluBaharat\ShopApp\obj\Debug\net6.0\ShopApp.WebUI.csproj.CopyComplete
 C:\Users\sihla\Masaüstü\MetaAkdeniz\MutluBaharat\ShopApp\obj\Debug\net6.0\ShopApp.WebUI.genruntimeconfig.cache
 C:\Users\sihla\Masaüstü\MetaAkdeniz\MutluBaharat\ShopApp\obj\Debug\net6.0\ref\ShopApp.WebUI.dll
+C:\Users\sihla\Masaüstü\MetaAkdeniz\MutluBaharat\ShopApp\bin\Debug\net6.0\MailKit.dll
+C:\Users\sihla\Masaüstü\MetaAkdeniz\MutluBaharat\ShopApp\bin\Debug\net6.0\MimeKit.dll
+C:\Users\sihla\Masaüstü\MetaAkdeniz\MutluBaharat\ShopApp\bin\Debug\net6.0\BouncyCastle.Crypto.dll

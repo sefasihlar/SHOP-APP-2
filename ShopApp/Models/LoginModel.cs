@@ -3,13 +3,13 @@ using RequiredAttribute = System.ComponentModel.DataAnnotations.RequiredAttribut
 
 namespace ShopApp.WebUI.Models
 {
-    public class LoginModel
-    {
-        [Required]
-        [DataType(DataType.EmailAddress)]
-        public string Email { get; set; }
-        [Required]
-        [DataType(DataType.Password)]
-        public string Password { get; set; }
-    }
+	public class LoginModel
+	{
+		[Required]
+		[DataType(DataType.EmailAddress)]
+		public string Email { get; set; }
+		[Required]
+		[DataType(DataType.Password)]
+		public string Password { get; set; }
+	}
 }

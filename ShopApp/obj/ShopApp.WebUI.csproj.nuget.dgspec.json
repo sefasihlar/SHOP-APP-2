@@ -47,6 +47,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.10, )"
@@ -319,6 +323,10 @@
             "IyzipayCore": {
               "target": "Package",
               "version": "[1.0.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.6.0, )"
             },
             "Microsoft.AspNetCore.Authorization": {
               "target": "Package",

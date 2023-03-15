@@ -7,77 +7,77 @@ using System.Diagnostics;
 namespace ShopApp.Controllers
 {
 
-    public class HomeController : Controller
-    {
-        private readonly ILogger<HomeController> _logger;
+	public class HomeController : Controller
+	{
+		private readonly ILogger<HomeController> _logger;
 
-        ProductManager ip = new ProductManager(new EfCoreProductDal());
+		ProductManager ip = new ProductManager(new EfCoreProductDal());
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+		public HomeController(ILogger<HomeController> logger)
+		{
+			_logger = logger;
+		}
 
-        public IActionResult Index()
-        {
-            var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
-            return View(values);
-        }
+		public IActionResult Index()
+		{
+			var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
+			return View(values);
+		}
 
-        //Galeri kısmı component kısmıyla yapılcak --start
-        public IActionResult Womans()
-        {
-            var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
-            return View(values);
-        }
+		//Galeri kısmı component kısmıyla yapılcak --start
+		public IActionResult Womans()
+		{
+			var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
+			return View(values);
+		}
 
-        public IActionResult Mans()
-        {
-            var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
-            return View(values);
-        }
-        public IActionResult Kids()
-        {
-            var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
-            return View(values);
-        }
-        public IActionResult Accessories()
-        {
-            var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
-            return View(values);
-        }
-        public IActionResult Cosmatics()
-        {
-            var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
-            return View(values);
-        }
+		public IActionResult Mans()
+		{
+			var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
+			return View(values);
+		}
+		public IActionResult Kids()
+		{
+			var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
+			return View(values);
+		}
+		public IActionResult Accessories()
+		{
+			var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
+			return View(values);
+		}
+		public IActionResult Cosmatics()
+		{
+			var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
+			return View(values);
+		}
 
-        //galeri kısmı --finish
+		//galeri kısmı --finish
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+		public IActionResult Privacy()
+		{
+			return View();
+		}
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+		public IActionResult Error()
+		{
+			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+		}
 
-        public IActionResult GelAll()
-        {
+		public IActionResult GelAll()
+		{
 
-            var values = ip.GetALl();
-            return View(values);
+			var values = ip.GetALl();
+			return View(values);
 
-        }
+		}
 
-        public IActionResult dneme()
-        {
-            return View();
-        }
+		public IActionResult dneme()
+		{
+			return View();
+		}
 
 
-    }
+	}
 }

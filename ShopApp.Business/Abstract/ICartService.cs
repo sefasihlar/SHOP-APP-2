@@ -2,20 +2,20 @@
 
 namespace ShopApp.Business.Abstract
 {
-    public interface ICartService
-    {
-        void InitializeCart(string userId);
+	public interface ICartService
+	{
+		void InitializeCart(string userId);
 
-        List<Cart> GetListCartItem();
+		List<Cart> GetListCartItem();
 
-        void DeleteFromCart(string userId, int productId);
+		void DeleteFromCart(string userId, int productId);
 
-        Cart GetCartByUserId(string userId);
+		Cart GetCartByUserId(string userId);
 
-        void AddToCart(string userId, int productId, int quantity);
+		void AddToCart(string userId, int productId, int quantity);
 
-        void ClearCart(string cartId);
+		void ClearCart(string cartId);
 
 
-    }
+	}
 }

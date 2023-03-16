@@ -1,68 +1,94 @@
-﻿@model ShopApp.WebUI.Models.AddProductModel
+﻿
 @{
-    ViewData["Title"] = "CreateProdcut";
+    ViewData["Title"] = "CreateProduct";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
+<div style="background-color:rgb(249, 249, 249);border-radius: 15px;padding: 3%;" class="container">
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="row">
+                <h4>
+                    <strong> Ürün Bilgileri </strong>
+                </h4><br>
+            </div>
+            <div style="margin-top: 15px;" class="row">
+                <div class="col-8">
 
-<div class="container">
-    <br />
-    <h3>Create Prodcut</h3>
-    <br />
-    <hr />
-    @section  Scripts{
-        <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-    }
-
-
-        <div class="row">
-            <div class="col-md-8">
-                <form asp-controller="Admin" asp-action="CreateProduct" method="post">
-                    <div class="form-group row">
-                        <label asp-for="Name" class="col-md-2 col-form-label"></label>
-                        <div class="col-md-10">
-                            <input asp-for="Name" value="@Model.Name" class="form-control" />
-                            <span asp-validation-for="Name" class="text-danger"></span>
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="order-edit">
+                                Ürün İsmi
+                            </span>
+                        </div>
+                        <div class="col-9">
+                            <input class="order-edit_input" type="text" placeholder="Ürün Adını Giriniz">
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label class="col-md-2 col-form-label" asp-for="ImageUrl"></label>
-                        <div class="col-md-10">
-                            <input asp-for="ImageUrl" value="@Model.ImageUrl" class="form-control" />
-                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="order-edit">
+                                Ürün Miktarı
+                            </span>
+                        </div>
+                        <div class="col-9">
+                            <input class="order-edit_input" type="text" placeholder="Ürün Miktarı Giriniz">
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label class="col-md-2 col-form-label" asp-for="Price"></label>
-                        <div class="col-md-10">
-                            <input asp-for="Price" value="@Model.Price" class="form-control" />
-                            <span asp-validation-for="Price" class="text-danger"></span>
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="order-edit">
+                                Ürün Fiyatı
+                            </span>
+                        </div>
+                        <div class="col-9">
+                            <input class="order-edit_input" type="text" placeholder="Ürün Fiyatı Giriniz">
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label class="col-md-2 col-form-label" asp-for="Gender"></label>
-                        <div class="col-md-10">
-                            <input asp-for="Gender" value="@Model.Gender" class="form-control" />
-                            <span asp-validation-for="Gender" class="text-danger"></span>
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="order-edit">
+                                Ürün Durumu
+                            </span>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-md-2 col-form-label" asp-for="Condition"></label>
-                        <div class="col-md-10">
-                            <input asp-for="Condition" value="@Model.Condition" class="form-control" />
-                            <span asp-validation-for="Condition" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-md-2 col-form-label"></label>
-                        <div class="col-md-10 offset-md-2">
-                            <button type="submit" value="" class="btn btn-primary">Save Product</button>
+                        <div class="col-9">
+                            <select class="select" name="" id="">
+                                <option value="">Aktif</option>
+                                <option value="">Pasif</option>
+                            </select>
                         </div>
                     </div>
 
-                </form>
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="order-edit">
+                                Ürün Resmi
+                            </span>
+                        </div>
+                        <div class="col-9">
+                            <input type="file" placeholder="Dosya Yükleyiniz">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <button id="save" class="primary-btn ">Kaydet</button>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="col-3">
+            <h4><strong>Kategoriler</strong></h4>
+            <br>
+            <div>
+                <label class="order-edit"><input type="checkbox" name="checkbox" value="value">Baharatlar</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="checkbox" value="value">Çaylar</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="checkbox" value="value">Setler</label>
+            </div>
+
+        </div>
     </div>
+</div>
 

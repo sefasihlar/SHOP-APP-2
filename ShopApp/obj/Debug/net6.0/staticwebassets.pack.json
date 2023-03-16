@@ -5,14 +5,6 @@
       "PackagePath": "staticwebassets\\ShopApp.WebUI.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\.DS_Store",
-      "PackagePath": "staticwebassets\\Theme\\.DS_Store"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\Source\\Magnific-Popup-master.zip",
-      "PackagePath": "staticwebassets\\Theme\\Source\\Magnific-Popup-master.zip"
-    },
-    {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\Source\\OwlCarousel2-2.3.4.zip",
       "PackagePath": "staticwebassets\\Theme\\Source\\OwlCarousel2-2.3.4.zip"
     },
@@ -21,32 +13,52 @@
       "PackagePath": "staticwebassets\\Theme\\Source\\SlickNav-master.zip"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\Source\\barfiller-master.zip",
-      "PackagePath": "staticwebassets\\Theme\\Source\\barfiller-master.zip"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\Source\\bootstrap-4.2.1-dist.zip",
-      "PackagePath": "staticwebassets\\Theme\\Source\\bootstrap-4.2.1-dist.zip"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\Source\\bootstrap-4.4.1-dist.zip",
+      "PackagePath": "staticwebassets\\Theme\\Source\\bootstrap-4.4.1-dist.zip"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\Source\\font-awesome-4.7.0.zip",
       "PackagePath": "staticwebassets\\Theme\\Source\\font-awesome-4.7.0.zip"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\Source\\jQuery.countdown-master.zip",
-      "PackagePath": "staticwebassets\\Theme\\Source\\jQuery.countdown-master.zip"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\Source\\jquery-nice-select-1.1.0.zip",
+      "PackagePath": "staticwebassets\\Theme\\Source\\jquery-nice-select-1.1.0.zip"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\blog-details.html",
-      "PackagePath": "staticwebassets\\Theme\\blog-details.html"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\Source\\jquery-ui-1.12.1.zip",
+      "PackagePath": "staticwebassets\\Theme\\Source\\jquery-ui-1.12.1.zip"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\blog.html",
-      "PackagePath": "staticwebassets\\Theme\\blog.html"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\Source\\sass.zip",
+      "PackagePath": "staticwebassets\\Theme\\Source\\sass.zip"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\checkout.html",
-      "PackagePath": "staticwebassets\\Theme\\checkout.html"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\admin\\admin_add_category.html",
+      "PackagePath": "staticwebassets\\Theme\\admin\\admin_add_category.html"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\admin\\admin_add_product.html",
+      "PackagePath": "staticwebassets\\Theme\\admin\\admin_add_product.html"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\admin\\admin_category_list.html",
+      "PackagePath": "staticwebassets\\Theme\\admin\\admin_category_list.html"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\admin\\admin_index.html",
+      "PackagePath": "staticwebassets\\Theme\\admin\\admin_index.html"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\admin\\admin_order_detail.html",
+      "PackagePath": "staticwebassets\\Theme\\admin\\admin_order_detail.html"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\admin\\admin_order_list.html",
+      "PackagePath": "staticwebassets\\Theme\\admin\\admin_order_list.html"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\admin\\admin_product_list.html",
+      "PackagePath": "staticwebassets\\Theme\\admin\\admin_product_list.html"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\contact.html",
@@ -69,12 +81,16 @@
       "PackagePath": "staticwebassets\\Theme\\css\\jquery-ui.min.css"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\css\\magnific-popup.css",
-      "PackagePath": "staticwebassets\\Theme\\css\\magnific-popup.css"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\Theme\\css\\nice-select.css"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\css\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\Theme\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\css\\register.css",
+      "PackagePath": "staticwebassets\\Theme\\css\\register.css"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\css\\slicknav.min.css",
@@ -125,6 +141,10 @@
       "PackagePath": "staticwebassets\\Theme\\fonts\\fontawesome-webfont.woff2"
     },
     {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\baharatBanner.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\baharatBanner.jpg"
+    },
+    {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\banner\\banner-1.jpg",
       "PackagePath": "staticwebassets\\Theme\\img\\banner\\banner-1.jpg"
     },
@@ -133,240 +153,116 @@
       "PackagePath": "staticwebassets\\Theme\\img\\banner\\banner-2.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\banner\\banner-3.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\banner\\banner-3.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\cart\\cart-1.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\cart\\cart-1.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\blog-1.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\blog-1.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\cart\\cart-2.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\cart\\cart-2.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\blog-10.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\blog-10.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\cart\\cart-3.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\cart\\cart-3.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\blog-2.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\blog-2.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\categories\\cat-1.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\categories\\cat-1.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\blog-3.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\blog-3.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\categories\\cat-2.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\categories\\cat-2.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\blog-4.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\blog-4.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\categories\\cat-3.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\categories\\cat-3.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\blog-5.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\blog-5.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\categories\\cat-4.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\categories\\cat-4.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\blog-6.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\blog-6.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\categories\\cat-5.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\categories\\cat-5.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\blog-7.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\blog-7.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\featured\\feature-1.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\featured\\feature-1.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\blog-8.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\blog-8.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\featured\\feature-2.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\featured\\feature-2.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\blog-9.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\blog-9.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\featured\\feature-3.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\featured\\feature-3.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\details\\blog-details.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\details\\blog-details.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\featured\\feature-4.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\featured\\feature-4.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\details\\comment-1.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\details\\comment-1.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\featured\\feature-5.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\featured\\feature-5.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\details\\comment-2.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\details\\comment-2.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\featured\\feature-6.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\featured\\feature-6.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\details\\comment-3.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\details\\comment-3.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\featured\\feature-7.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\featured\\feature-7.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\sidebar\\fp-1.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\sidebar\\fp-1.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\featured\\feature-8.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\featured\\feature-8.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\sidebar\\fp-2.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\sidebar\\fp-2.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\hero\\banner.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\hero\\banner.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\blog\\sidebar\\fp-3.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\blog\\sidebar\\fp-3.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\language.png",
+      "PackagePath": "staticwebassets\\Theme\\img\\language.png"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\categories\\category-1.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\categories\\category-1.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\latest-product\\lp-1.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\latest-product\\lp-1.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\categories\\category-2.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\categories\\category-2.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\latest-product\\lp-2.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\latest-product\\lp-2.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\categories\\category-3.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\categories\\category-3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\categories\\category-4.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\categories\\category-4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\categories\\category-5.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\categories\\category-5.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\discount.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\discount.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\instagram\\insta-1.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\instagram\\insta-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\instagram\\insta-2.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\instagram\\insta-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\instagram\\insta-3.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\instagram\\insta-3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\instagram\\insta-4.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\instagram\\insta-4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\instagram\\insta-5.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\instagram\\insta-5.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\instagram\\insta-6.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\instagram\\insta-6.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\latest-product\\lp-3.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\latest-product\\lp-3.jpg"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\logo.png",
       "PackagePath": "staticwebassets\\Theme\\img\\logo.png"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\payment\\payment-1.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\payment\\payment-1.png"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\payment-item.png",
+      "PackagePath": "staticwebassets\\Theme\\img\\payment-item.png"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\payment\\payment-2.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\payment\\payment-2.png"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\details\\product-details-1.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\details\\product-details-1.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\payment\\payment-3.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\payment\\payment-3.png"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\details\\product-details-2.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\details\\product-details-2.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\payment\\payment-4.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\payment\\payment-4.png"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\details\\product-details-3.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\details\\product-details-3.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\payment\\payment-5.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\payment\\payment-5.png"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\details\\product-details-4.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\details\\product-details-4.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\0tumn_greedy_exponential_artwork_cyberpunk_business_woman_swimm_054fb324-3a36-42d0-8ce4-a500b46e4fc4.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\0tumn_greedy_exponential_artwork_cyberpunk_business_woman_swimm_054fb324-3a36-42d0-8ce4-a500b46e4fc4.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\2190943.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\2190943.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\22549ee2-a82b-4b90-8451-bb927b201cb6.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\22549ee2-a82b-4b90-8451-bb927b201cb6.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\AICONNOR_The_ancient_black_lion_god_an_ancient_god_with_a_black_3a3c7884-f2d6-441d-844b-b526e56f4a6f.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\AICONNOR_The_ancient_black_lion_god_an_ancient_god_with_a_black_3a3c7884-f2d6-441d-844b-b526e56f4a6f.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\Brogle_quantum_people_thinking_quantum_things_346c69c1-c001-42f8-b7bc-12b08ccf6b1d.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\Brogle_quantum_people_thinking_quantum_things_346c69c1-c001-42f8-b7bc-12b08ccf6b1d.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\EC248E62-0705-4A57-8FB2-AE5442D1E0B9.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\EC248E62-0705-4A57-8FB2-AE5442D1E0B9.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\Jessi_the_First_Worm_reimagined_in_one_image_218fef51-cf11-42c5-a7fc-37c729cb2d64.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\Jessi_the_First_Worm_reimagined_in_one_image_218fef51-cf11-42c5-a7fc-37c729cb2d64.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\NABguys_illustrated_by_Miles_johnston__shintaro_kago_exploded_i_9346e58b-7ac8-4126-9f09-bad9f7577a3a.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\NABguys_illustrated_by_Miles_johnston__shintaro_kago_exploded_i_9346e58b-7ac8-4126-9f09-bad9f7577a3a.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\Nirvana.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\Nirvana.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\Orlando_Grech_disastrously_broken_hiper_realistic_gorgeous_albi_b05ff19c-afd5-437e-9882-9898e402c65d.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\Orlando_Grech_disastrously_broken_hiper_realistic_gorgeous_albi_b05ff19c-afd5-437e-9882-9898e402c65d.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\Orlando_Grech_two_dragons_fight_each_other_jordan_kerwick_paint_64608c22-67a4-4690-a76b-572720bc73c4.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\Orlando_Grech_two_dragons_fight_each_other_jordan_kerwick_paint_64608c22-67a4-4690-a76b-572720bc73c4.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\Pigcanfly72_Anthropomorphic_blue_owl_big_green_eyes_lots_of_det_9a7eca7e-1b2c-4e8b-8509-6b011ff8190e.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\Pigcanfly72_Anthropomorphic_blue_owl_big_green_eyes_lots_of_det_9a7eca7e-1b2c-4e8b-8509-6b011ff8190e.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\Serbiandude_lavaforestlionangryglow8k_691d7845-14a5-40c8-a141-ae205a4dc694.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\Serbiandude_lavaforestlionangryglow8k_691d7845-14a5-40c8-a141-ae205a4dc694.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\Stickman_plague_doctor_in_the_style_of_H_R_Giger_photorealistic_8355dc09-9234-49f9-b8bb-7ae51788cbc5.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\Stickman_plague_doctor_in_the_style_of_H_R_Giger_photorealistic_8355dc09-9234-49f9-b8bb-7ae51788cbc5.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\Wad_character_sheet_of_an_enraged_cyborg_medusa__6949b181-2a39-40b0-8081-8ab5f0358477.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\Wad_character_sheet_of_an_enraged_cyborg_medusa__6949b181-2a39-40b0-8081-8ab5f0358477.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\almostreturned.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\almostreturned.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\anico_avarice_cute_rat_sitting_in_a_pile_of_veggies__eddie_mend_d203e8e3-fbea-4bd8-96e7-a147bb9e2962.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\anico_avarice_cute_rat_sitting_in_a_pile_of_veggies__eddie_mend_d203e8e3-fbea-4bd8-96e7-a147bb9e2962.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\buffalumps_a_bald_eagle_and_a_robot_rat_are_best_friends__weari_fee32559-c795-4b99-b64e-0fd975651027.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\buffalumps_a_bald_eagle_and_a_robot_rat_are_best_friends__weari_fee32559-c795-4b99-b64e-0fd975651027.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\ceNmTalz_4x.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\ceNmTalz_4x.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\details\\product-1.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\details\\product-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\details\\product-2.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\details\\product-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\details\\product-3.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\details\\product-3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\details\\product-4.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\details\\product-4.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\details\\product-details-5.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\details\\product-details-5.jpg"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\details\\thumb-1.jpg",
@@ -385,28 +281,44 @@
       "PackagePath": "staticwebassets\\Theme\\img\\product\\details\\thumb-4.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\drawinc13_1312711112_6659ba50-c6fe-497b-81cd-6b1ea0b1ce85.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\drawinc13_1312711112_6659ba50-c6fe-497b-81cd-6b1ea0b1ce85.png"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\discount\\pd-1.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\discount\\pd-1.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\eptzzehu4i3.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\eptzzehu4i3.png"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\discount\\pd-2.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\discount\\pd-2.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\grid_0_1.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\grid_0_1.png"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\discount\\pd-3.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\discount\\pd-3.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\itsnotabirdoraplane.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\itsnotabirdoraplane.png"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\discount\\pd-4.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\discount\\pd-4.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\naabrimees_low_detail_easy_to_understand_picture_of_the_primord_61ca438d-9330-4386-b818-2237bee50f81.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\naabrimees_low_detail_easy_to_understand_picture_of_the_primord_61ca438d-9330-4386-b818-2237bee50f81.png"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\discount\\pd-5.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\discount\\pd-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\discount\\pd-6.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\discount\\pd-6.jpg"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\product-1.jpg",
       "PackagePath": "staticwebassets\\Theme\\img\\product\\product-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\product-10.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\product-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\product-11.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\product-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\product-12.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\product-12.jpg"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\product-2.jpg",
@@ -437,232 +349,8 @@
       "PackagePath": "staticwebassets\\Theme\\img\\product\\product-8.jpg"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\py_convert_lady_Tahakami_Hasselblad_large_format_Photograph_of_a_Mechanical_wol_68d826cc-5779-4325-8fc1-fe194b7fa881.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\py_convert_lady_Tahakami_Hasselblad_large_format_Photograph_of_a_Mechanical_wol_68d826cc-5779-4325-8fc1-fe194b7fa881.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\related\\rp-1.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\related\\rp-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\related\\rp-2.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\related\\rp-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\related\\rp-3.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\related\\rp-3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\related\\rp-4.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\related\\rp-4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\shop-2.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\shop-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\shop-7.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\product\\shop-7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop - Copy\\shop-1.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop - Copy\\shop-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop - Copy\\shop-2.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop - Copy\\shop-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop - Copy\\shop-3.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop - Copy\\shop-3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop - Copy\\shop-4.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop - Copy\\shop-4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop - Copy\\shop-5.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop - Copy\\shop-5.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop - Copy\\shop-6.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop - Copy\\shop-6.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop - Copy\\shop-7.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop - Copy\\shop-7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop - Copy\\shop-8.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop - Copy\\shop-8.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop - Copy\\shop-9.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop - Copy\\shop-9.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop-cart\\cp-1.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop-cart\\cp-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop-cart\\cp-2.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop-cart\\cp-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop-cart\\cp-3.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop-cart\\cp-3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop-cart\\cp-4.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop-cart\\cp-4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\2190943.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\2190943.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\22549ee2-a82b-4b90-8451-bb927b201cb6.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\22549ee2-a82b-4b90-8451-bb927b201cb6.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\Brogle_quantum_people_thinking_quantum_things_346c69c1-c001-42f8-b7bc-12b08ccf6b1d.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\Brogle_quantum_people_thinking_quantum_things_346c69c1-c001-42f8-b7bc-12b08ccf6b1d.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\EC248E62-0705-4A57-8FB2-AE5442D1E0B9.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\EC248E62-0705-4A57-8FB2-AE5442D1E0B9.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\Nirvana.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\Nirvana.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\Orlando_Grech_two_dragons_fight_each_other_jordan_kerwick_paint_64608c22-67a4-4690-a76b-572720bc73c4.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\Orlando_Grech_two_dragons_fight_each_other_jordan_kerwick_paint_64608c22-67a4-4690-a76b-572720bc73c4.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\Pigcanfly72_Anthropomorphic_blue_owl_big_green_eyes_lots_of_det_9a7eca7e-1b2c-4e8b-8509-6b011ff8190e.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\Pigcanfly72_Anthropomorphic_blue_owl_big_green_eyes_lots_of_det_9a7eca7e-1b2c-4e8b-8509-6b011ff8190e.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\almostreturned.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\almostreturned.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\grid_0_1.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\grid_0_1.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\naabrimees_low_detail_easy_to_understand_picture_of_the_primord_61ca438d-9330-4386-b818-2237bee50f81.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\naabrimees_low_detail_easy_to_understand_picture_of_the_primord_61ca438d-9330-4386-b818-2237bee50f81.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\product-1.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\product-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\product-2.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\product-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\product-3.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\product-3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\product-4.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\product-4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\product-5.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\product-5.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\product-6.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\product-6.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\product-7.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\product-7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\product-8.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\product-8.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\py_convert_lady_Tahakami_Hasselblad_large_format_Photograph_of_a_Mechanical_wol_68d826cc-5779-4325-8fc1-fe194b7fa881.png",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\py_convert_lady_Tahakami_Hasselblad_large_format_Photograph_of_a_Mechanical_wol_68d826cc-5779-4325-8fc1-fe194b7fa881.png"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\shop-1.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\shop-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\shop-2.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\shop-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\shop-3.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\shop-3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\shop-4.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\shop-4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\shop-5.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\shop-5.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\shop-6.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\shop-6.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\shop-7.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\shop-7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\shop-8.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\shop-8.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\shop\\shop-9.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\shop\\shop-9.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\trend\\bs-1.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\trend\\bs-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\trend\\bs-2.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\trend\\bs-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\trend\\bs-3.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\trend\\bs-3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\trend\\f-1.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\trend\\f-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\trend\\f-2.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\trend\\f-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\trend\\f-3.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\trend\\f-3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\trend\\ht-1.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\trend\\ht-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\trend\\ht-2.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\trend\\ht-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\trend\\ht-3.jpg",
-      "PackagePath": "staticwebassets\\Theme\\img\\trend\\ht-3.jpg"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\product-9.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\product-9.jpg"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\index.html",
@@ -681,16 +369,8 @@
       "PackagePath": "staticwebassets\\Theme\\js\\jquery-ui.min.js"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\js\\jquery.countdown.min.js",
-      "PackagePath": "staticwebassets\\Theme\\js\\jquery.countdown.min.js"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\js\\jquery.magnific-popup.min.js",
-      "PackagePath": "staticwebassets\\Theme\\js\\jquery.magnific-popup.min.js"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\js\\jquery.nicescroll.min.js",
-      "PackagePath": "staticwebassets\\Theme\\js\\jquery.nicescroll.min.js"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\Theme\\js\\jquery.nice-select.min.js"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\js\\jquery.slicknav.js",
@@ -709,16 +389,32 @@
       "PackagePath": "staticwebassets\\Theme\\js\\owl.carousel.min.js"
     },
     {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\login.html",
+      "PackagePath": "staticwebassets\\Theme\\login.html"
+    },
+    {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\main.html",
       "PackagePath": "staticwebassets\\Theme\\main.html"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\product-details.html",
-      "PackagePath": "staticwebassets\\Theme\\product-details.html"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\profil.html",
+      "PackagePath": "staticwebassets\\Theme\\profil.html"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\readme.txt",
       "PackagePath": "staticwebassets\\Theme\\readme.txt"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\registerseller.html",
+      "PackagePath": "staticwebassets\\Theme\\registerseller.html"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\registeruser.html",
+      "PackagePath": "staticwebassets\\Theme\\registeruser.html"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\resetpassword.html",
+      "PackagePath": "staticwebassets\\Theme\\resetpassword.html"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\sass\\_base.scss",
@@ -741,10 +437,6 @@
       "PackagePath": "staticwebassets\\Theme\\sass\\_breadcrumb.scss"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\sass\\_categories.scss",
-      "PackagePath": "staticwebassets\\Theme\\sass\\_categories.scss"
-    },
-    {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\sass\\_checkout.scss",
       "PackagePath": "staticwebassets\\Theme\\sass\\_checkout.scss"
     },
@@ -761,6 +453,10 @@
       "PackagePath": "staticwebassets\\Theme\\sass\\_header.scss"
     },
     {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\sass\\_hero.scss",
+      "PackagePath": "staticwebassets\\Theme\\sass\\_hero.scss"
+    },
+    {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\sass\\_home-page.scss",
       "PackagePath": "staticwebassets\\Theme\\sass\\_home-page.scss"
     },
@@ -769,24 +465,24 @@
       "PackagePath": "staticwebassets\\Theme\\sass\\_mixins.scss"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\sass\\_product-details.scss",
-      "PackagePath": "staticwebassets\\Theme\\sass\\_product-details.scss"
-    },
-    {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\sass\\_product.scss",
-      "PackagePath": "staticwebassets\\Theme\\sass\\_product.scss"
-    },
-    {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\sass\\_responsive.scss",
       "PackagePath": "staticwebassets\\Theme\\sass\\_responsive.scss"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\sass\\_shop-cart.scss",
-      "PackagePath": "staticwebassets\\Theme\\sass\\_shop-cart.scss"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\sass\\_shop-details.scss",
+      "PackagePath": "staticwebassets\\Theme\\sass\\_shop-details.scss"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\sass\\_shop.scss",
-      "PackagePath": "staticwebassets\\Theme\\sass\\_shop.scss"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\sass\\_shop-grid.scss",
+      "PackagePath": "staticwebassets\\Theme\\sass\\_shop-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\sass\\_shoping-cart.scss",
+      "PackagePath": "staticwebassets\\Theme\\sass\\_shoping-cart.scss"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\sass\\_sidebar.scss",
+      "PackagePath": "staticwebassets\\Theme\\sass\\_sidebar.scss"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\sass\\_variable.scss",
@@ -797,12 +493,24 @@
       "PackagePath": "staticwebassets\\Theme\\sass\\style.scss"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\shop-cart.html",
-      "PackagePath": "staticwebassets\\Theme\\shop-cart.html"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\sellerCheckout.html",
+      "PackagePath": "staticwebassets\\Theme\\sellerCheckout.html"
     },
     {
-      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\shop.html",
-      "PackagePath": "staticwebassets\\Theme\\shop.html"
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\shop-details.html",
+      "PackagePath": "staticwebassets\\Theme\\shop-details.html"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\shop-grid.html",
+      "PackagePath": "staticwebassets\\Theme\\shop-grid.html"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\shoping-cart.html",
+      "PackagePath": "staticwebassets\\Theme\\shoping-cart.html"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\userCheckout.html",
+      "PackagePath": "staticwebassets\\Theme\\userCheckout.html"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",

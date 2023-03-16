@@ -1,70 +1,84 @@
-﻿@using ShopApp.WebUI.Models
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="zxx">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Ashion Template">
-    <meta name="keywords" content="Ashion, unica, creative, html">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AI Art Shop</title>
+    <title>Mutlu Baharat</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="/Theme/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="/Theme/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="/Theme/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="/Theme/css/nice-select.css" type="text/css">
     <link rel="stylesheet" href="/Theme/css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="/Theme/css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="/Theme/css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="/Theme/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="/Theme/css/StyleSheet.css" type="text/css">
     <link rel="stylesheet" href="/Theme/css/style.css" type="text/css">
-
-
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
-
-
 </head>
+
 <body>
+    <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
     </div>
-    @await Html.PartialAsync("PartialHome/Navbar")
-    @if (TempData["message"]!=null)
-    {
 
-        <partial name="_resultMassage" model="@(TempData.Get<ResultMessage>("Message"))" />
-    }
- 
-    
-            @RenderBody()
-       
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - ShopApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
+        <div class="humberger__menu__widget">
+
+            <div class="header__top__right__auth">
+                <a href="#"><i class="fa fa-user"></i> Login</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Anasayfa</a></li>
+                <li><a href="./shop-grid.html">Alışveriş</a></li>
+                <li><a href="./contact.html">İletişim</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                <li>Free Shipping for all Order of $99</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Humberger End -->
+    <!-- Header Section Begin -->
+    @await Html.PartialAsync("PartialHome/Navbar")
+    <!-- Header Section End -->
+    <!-- Hero Section Begin -->
+
+    <!-- Hero Section End -->
+    <!-- Categories Section Begin -->
+    @RenderBody()
+    <!-- Footer Section Begin -->
+    @await Html.PartialAsync("PartialHome/Footer")
+    <!-- Footer Section End -->
+    <!-- Js Plugins -->
     <script src="/Theme/js/jquery-3.3.1.min.js"></script>
     <script src="/Theme/js/bootstrap.min.js"></script>
-    <script src="/Theme/js/jquery.magnific-popup.min.js"></script>
+    <script src="/Theme/js/jquery.nice-select.min.js"></script>
     <script src="/Theme/js/jquery-ui.min.js"></script>
-    <script src="/Theme/js/mixitup.min.js"></script>
-    <script src="/Theme/js/jquery.countdown.min.js"></script>
     <script src="/Theme/js/jquery.slicknav.js"></script>
+    <script src="/Theme/js/mixitup.min.js"></script>
     <script src="/Theme/js/owl.carousel.min.js"></script>
-    <script src="/Theme/js/jquery.nicescroll.min.js"></script>
     <script src="/Theme/js/main.js"></script>
-
-    @await RenderSectionAsync("Scripts",false)
 </body>
 </html>

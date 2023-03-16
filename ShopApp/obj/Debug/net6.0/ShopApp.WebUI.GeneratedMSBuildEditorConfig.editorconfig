@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Account/RegisterUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlclVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -64,10 +68,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Admin/ManList.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuTGlzdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Admin/OrderDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT3JkZXJEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -76,8 +76,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT3JkZXJMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Admin/WomenList.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cV29tZW5MaXN0LmNzaHRtbA==
+[C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Admin/ProductList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Cart/Checkout.cshtml]
@@ -94,10 +94,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Cart/OrderDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxPcmRlckRldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Cart/Success.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Home/GelAll.cshtml]
@@ -190,14 +186,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Shop/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Shop/ManList.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxNYW5MaXN0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Shop/WomenList.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxXb21lbkxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/_ViewImports.cshtml]

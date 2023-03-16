@@ -8,33 +8,32 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop - Copy\shop-1.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop - Copy\shop-2.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop - Copy\shop-3.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop - Copy\shop-4.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop - Copy\shop-5.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop - Copy\shop-6.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop - Copy\shop-7.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop - Copy\shop-8.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop - Copy\shop-9.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\2190943.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\22549ee2-a82b-4b90-8451-bb927b201cb6.png" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\almostreturned.png" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\Brogle_quantum_people_thinking_quantum_things_346c69c1-c001-42f8-b7bc-12b08ccf6b1d.png" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\EC248E62-0705-4A57-8FB2-AE5442D1E0B9.png" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\grid_0_1.png" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\naabrimees_low_detail_easy_to_understand_picture_of_the_primord_61ca438d-9330-4386-b818-2237bee50f81.png" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\Nirvana.png" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\Orlando_Grech_two_dragons_fight_each_other_jordan_kerwick_paint_64608c22-67a4-4690-a76b-572720bc73c4.png" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\Pigcanfly72_Anthropomorphic_blue_owl_big_green_eyes_lots_of_det_9a7eca7e-1b2c-4e8b-8509-6b011ff8190e.png" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\product-1.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\product-2.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\product-3.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\product-4.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\product-5.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\product-6.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\product-7.jpg" />
-    <_ContentIncludedByDefault Remove="wwwroot\Theme\img\shop\product-8.jpg" />
+    <None Include="wwwroot\Theme\.git\config" />
+    <None Include="wwwroot\Theme\.git\description" />
+    <None Include="wwwroot\Theme\.git\HEAD" />
+    <None Include="wwwroot\Theme\.git\hooks\applypatch-msg.sample" />
+    <None Include="wwwroot\Theme\.git\hooks\commit-msg.sample" />
+    <None Include="wwwroot\Theme\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="wwwroot\Theme\.git\hooks\post-update.sample" />
+    <None Include="wwwroot\Theme\.git\hooks\pre-applypatch.sample" />
+    <None Include="wwwroot\Theme\.git\hooks\pre-commit.sample" />
+    <None Include="wwwroot\Theme\.git\hooks\pre-merge-commit.sample" />
+    <None Include="wwwroot\Theme\.git\hooks\pre-push.sample" />
+    <None Include="wwwroot\Theme\.git\hooks\pre-rebase.sample" />
+    <None Include="wwwroot\Theme\.git\hooks\pre-receive.sample" />
+    <None Include="wwwroot\Theme\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="wwwroot\Theme\.git\hooks\push-to-checkout.sample" />
+    <None Include="wwwroot\Theme\.git\hooks\update.sample" />
+    <None Include="wwwroot\Theme\.git\index" />
+    <None Include="wwwroot\Theme\.git\info\exclude" />
+    <None Include="wwwroot\Theme\.git\logs\HEAD" />
+    <None Include="wwwroot\Theme\.git\logs\refs\heads\master" />
+    <None Include="wwwroot\Theme\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="wwwroot\Theme\.git\objects\pack\pack-0775428543023b4999316031f5021259594937bb.idx" />
+    <None Include="wwwroot\Theme\.git\objects\pack\pack-0775428543023b4999316031f5021259594937bb.pack" />
+    <None Include="wwwroot\Theme\.git\packed-refs" />
+    <None Include="wwwroot\Theme\.git\refs\heads\master" />
+    <None Include="wwwroot\Theme\.git\refs\remotes\origin\HEAD" />
   </ItemGroup>
 
   <ItemGroup>
@@ -57,8 +56,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils" Version="6.0.11" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils" Version="6.0.13" />
     <PackageReference Include="SendGrid" Version="9.28.0" />
   </ItemGroup>
 
@@ -69,18 +68,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="wwwroot\Theme\img\shop\py_convert_lady_Tahakami_Hasselblad_large_format_Photograph_of_a_Mechanical_wol_68d826cc-5779-4325-8fc1-fe194b7fa881.png">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="wwwroot\Theme\img\shop\shop-2.jpg">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="wwwroot\Theme\img\shop\shop-7.jpg">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
+    <Folder Include="wwwroot\Theme\.git\objects\info\" />
+    <Folder Include="wwwroot\Theme\.git\refs\tags\" />
   </ItemGroup>
 
 </Project>

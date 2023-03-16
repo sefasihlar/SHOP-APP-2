@@ -1,14 +1,16 @@
 ﻿
-
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "HomePage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+ @await Html.PartialAsync("PartialHome/Banner")
 
-@await Html.PartialAsync("PartialHome/Categories")
-@await Html.PartialAsync("PartialHome/Products")
-@await Html.PartialAsync("PartialHome/Banner")
-@await Html.PartialAsync("PartialHome/Trend")
-@await Html.PartialAsync("PartialHome/Discount")
-@await Html.PartialAsync("PartialHome/Instegram")
-@await Html.PartialAsync("PartialHome/Footer")
+    @await Html.PartialAsync("PartialHome/Categories")
+    <!-- Categories Section End -->
+    <!--  Product promotion Begin -->
+    @await Html.PartialAsync("PartialHome/Products")
+    <!-- Product promotion End -->
+    <!-- Bestsellers and Recently Added Tables Begin -->
+    <!-- Bestsellers and Recently Added Tables End -->
+    @await Html.PartialAsync("PartialHome/Trend")
 

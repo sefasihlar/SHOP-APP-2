@@ -1,5 +1,8 @@
-﻿@model ShopApp.WebUI.Models.CategoryListViewModel
-@foreach (var item in Model.kategoriler)
-{
-    <p>@item.Name</p>
+﻿
+@{
+    ViewData["Title"] = "CategoryList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<h1>CategoryList</h1>
+

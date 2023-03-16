@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mutlu Baharat</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="#"><img src="../img/logo.png" alt=""></a>
+        </div>
+
+        <div class="humberger__menu__widget">
+          
+            <div class="header__top__right__auth">
+                <a href="#"><i class="fa fa-user"></i> Admin</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="../index.html">Home</a></li>
+                <li><a href="../shop-grid.html">Shop</a></li>
+                <li><a href="#">Pages</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="../shop-details.html">Shop Details</a></li>
+                        <li><a href="../shoping-cart.html">Shoping Cart</a></li>
+                        <li><a href="../checkout.html">Check Out</a></li>
+                        <li><a href="../blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        </div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                <li>Free Shipping for all Order of $99</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                                <li>Free Shipping for all Order of $99</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+
+                            </div>
+                            
+                            <div class="header__top__right__auth">
+                                <a href="#"><i class="fa fa-user"></i> Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 text-center">
+                    <div class="header__logo">
+                        <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="admin_index.html">Anasayfa</a></li>
+                            <li><a href="./admin_product_list.html">Ürün Ekle</a></li>
+                            <li><a href="./admin_category_list.html">Kategori Ekle</a></li>
+                            <li class="active"><a href="./admin_order_list.html">Siparisler</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+    <!-- Order List Begin-->
+    <div  class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row ">
+                    <div class="col-lg-10">
+                        <h2 class="text-center"><strong>Kategoriler</strong></h2>
+                    </div>
+                    <div class=" col-lg-2">
+                            <a class="site-btn" href="./admin_add_category.html"> Yeni Kategori Ekle</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tablo row">
+                            <table class="table ">
+                                <thead>
+                                    <tr>
+                                        <th>Kategori ID</th>
+                                        <th>Kategori İsmi</th>
+                                        <th>Oluşturma Tarihi</th>
+                                        <th>Durum</th>
+                                        <th></th>
+                                    </tr>
+                
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Baharat</td>
+                                        <td>20-03-2023</td>
+                                        <td>Aktif</td>
+                                        <td>
+                                            <a href="">
+                                                <i class="bi bi-pen mr-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                                                        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                                                    </svg>
+                                                </i>
+                                            </a>
+                                            <a class="delete">
+                                                <i  class="bi bi-trash">
+                                                    <svg  style="color:red" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                                        <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                                                      </svg>
+                                                </i>
+                                            </a>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Harçlar</td>
+                                        <td>20-03-2023</td>
+                                        <td>Aktif</td>
+                                        <td>
+                                            <a href="">
+                                                <i class="bi bi-pen mr-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                                                        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                                                    </svg>
+                                                </i>
+                                            </a>
+                                            <a class="delete">
+                                                <i  class="bi bi-trash">
+                                                    <svg  style="color:red" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                                        <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                                                      </svg>
+                                                </i>
+                                            </a>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                    
+                            </table>
+                        </div>
+                    </div>
+                  
+                    
+                </div>
+             
+            </div>
+
+        </div>
+    </div>
+    
+       
+       
+            
+            
+            
+        
+    </div>
+
+    
+
+
+    <!-- Order List End -->
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="../index.html"><img width="125px" height="125px" src="../img/logo.png" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Adres:Antalya Organize Sanayi Bölgesi 2. Kısım 24. Cadde</li>
+                            <li>Telefon No:0(242)3222327</li>
+                            <li>Mobile Telefon No-1:05413222327</li>
+                            <li>Mobile Telefon No-2:05413222328</li>
+                            <li>Email:mutlu_baharat@hotmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 ">
+                    <div class="footer__widget">
+                        <h6>Useful Links</h6>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">About Our Shop</a></li>
+                            <li><a href="#">Secure Shopping</a></li>
+                            <li><a href="#">Delivery infomation</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Our Sitemap</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Innovation</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Telif Hakkı &copy;<script>document.write(new Date().getFullYear());</script> Tüm Hakları Sakldır | <a href="https://www.metaakdeniz.com/" target="_blank">MetaAkdeniz Yazılım</a> Tarafından Hazırlanmıştır.
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                        <div class="footer__copyright__payment"><img src="../img/payment-item.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery.slicknav.js"></script>
+    <script src="../js/mixitup.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $(".delete").click(function () {
+        
+            swal({
+                title: "Emin Misin?",
+                text: "Silmek istediğine emin misin?",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+                buttons:['İptal','Sil']
+                })
+                .then((willDelete) => {
+                if (willDelete) {
+                    swal("Silme İşlemi Başarılı!", {
+                    icon: "success",
+                    });
+                } else {
+                    swal("Maalesef Silinemedi!",{
+                        icon:"error"
+                    })
+                   
+                }
+                });
+        
+        });
+        </script>
+
+
+</body>
+
+</html>

@@ -5,236 +5,155 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
+<!-- Breadcrumb Section Begin -->
+<!-- Breadcrumb Section End -->
+<!-- Product Details Section Begin -->
 <section class="product-details spad">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="product__details__pic">
-           
-                    <div class="product__details__slider__content">
-                        <div class="product__details__pic__slider owl-carousel">
-                            <img data-hash="@Model.ImageUrl" class="product__big__img" src="/Theme/img/product/@Model.ImageUrl" alt="">
-                            <img data-hash="@Model.ImageUrl" class="product__big__img" src="/Theme/img/product/@Model.ImageUrl" alt="">
-                            <img data-hash="@Model.ImageUrl" class="product__big__img" src="/Theme/img/product/@Model.ImageUrl" alt="">
-                            <img data-hash="@Model.ImageUrl" class="product__big__img" src="/Theme/img/product/@Model.ImageUrl" alt="">
-                        </div>
+                    <div class="product__details__pic__item">
+                        <img class="product__details__pic__item--large"
+                             src="/Theme/img/product/details/product-details-1.jpg" alt="">
+                    </div>
+                    <div class="product__details__pic__slider owl-carousel">
+                        <img data-imgbigurl="/Theme/img/product/details/product-details-2.jpg"
+                             src="img/product/details/thumb-1.jpg" alt="">
+                        <img data-imgbigurl="/Theme/img/product/details/product-details-3.jpg"
+                             src="img/product/details/thumb-2.jpg" alt="">
+                        <img data-imgbigurl="/Theme/img/product/details/product-details-5.jpg"
+                             src="img/product/details/thumb-3.jpg" alt="">
+                        <img data-imgbigurl="/Theme/img/product/details/product-details-4.jpg"
+                             src="img/product/details/thumb-4.jpg" alt="">
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="product__details__text">
-                    <h3>@Model.Name <span>Ürün açıklaması: model üzerinde gelecek olan açıklama</span></h3>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <span>( 138 reviews )</span>
-                    </div>
-                    <div class="product__details__price">$ @Model.Price <span>$ 83.0</span></div>
+                    <h3>@Model.Name</h3>
+                    <div class="product__details__price">@Model.Price ₺</div>
                     <p>
-                        Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur
-                        magni lores eos qui ratione voluptatem sequi nesciunt.
+                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam
+                        vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet
+                        quam vehicula elementum sed sit amet dui. Proin eget tortor risus.
                     </p>
-                    <div class="product__details__button">
-
-                        <form method="post" asp-controller="Cart" asp-action="AddToCart" class="form-inline">
-                            <input type="hidden" name="productId" value="@Model.Id" />
-                            <div class="quantity input-group mb-3">
-                                <input type="number" name="quantity" class="from-control" value="1" step="1" style="width:contain" />
-                                <div class="input-group-append">
-                                    <button type="submit" class="btn btn-primary">
-                                        <a>
-                                            <span class="icon_bag_alt"></span>
-                                            AddToCart
-                                            
-                                        </a>
-                                    </button>
+                    <form method="post" asp-controller="Cart" asp-action="AddToCart">
+                        <input type="hidden" name="productId" value="@Model.Id" />
+                        <div class="product__details__quantity">
+                            <div class="quantity">
+                                <div class="pro-qty">
+                                    <input type="number" name="quantity" class="from-control" value="1" step="1">
                                 </div>
                             </div>
-                            <input type="hidden" name="quantity" value="1" />
-                        </form>
-                        <ul>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_adjust-horiz"></span></a></li>
-                        </ul>
-                    </div>
-                    <div class="product__details__widget">
-                        <ul>
-                            <li>
-                                <span>Skok:</span>
-                                <div class="stock__checkbox">
-                                    <label for="stockin">
-                                        In Stock
-                                        <input type="checkbox" id="stockin">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Çerçeve Renk:</span>
-                                <div class="color__checkbox">
-                                    <label for="red">
-                                        <input type="radio" name="color__radio" id="red" checked>
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label for="black">
-                                        <input type="radio" name="color__radio" id="black">
-                                        <span class="checkmark black-bg"></span>
-                                    </label>
-                                    <label for="grey">
-                                        <input type="radio" name="color__radio" id="grey">
-                                        <span class="checkmark grey-bg"></span>
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Çözünürlük:</span>
-                                <div class="size__btn">
-                                    <label for="xs-btn" class="active">
-                                        <input type="radio" id="xs-btn">
-                                        2K
-                                    </label>
-                                    <label for="s-btn">
-                                        <input type="radio" id="s-btn">
-                                        4K
-                                    </label>
-                                    <label for="m-btn">
-                                        <input type="radio" id="m-btn">
-                                        8K
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Kargo:</span>
-                                <p>Free shipping</p>
-                            </li>
-                        </ul>
-                    </div>
+                        </div>
+                        <button href="#" class="primary-btn" type="submit">Sepete Ekle</button>
+                        <input type="hidden" name="quantity" value="1" />
+                    </form>
+                   
+                    <ul>
+                        <li><b>Stok</b> <span>Stokta var</span></li>
+                        <li><b>Kargo</b> <span>100 ₺ ve üzeri<samp> Kargo bedava</samp></span></li>
+                        <li>
+                            <b>Paylaş</b>
+                            <div class="share">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="col-lg-12">
                 <div class="product__details__tab">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Description</a>
+                            <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
+                               aria-selected="true">Description</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Specification</a>
+                            <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
+                               aria-selected="false">Information</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Reviews ( 2 )</a>
+                            <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
+                               aria-selected="false">Reviews <span>(1)</span></a>
                         </li>
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                            <h6>Description</h6>
-                            <p>
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut loret fugit, sed
-                                quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt loret.
-                                Neque porro lorem quisquam est, qui dolorem ipsum quia dolor si. Nemo enim ipsam
-                                voluptatem quia voluptas sit aspernatur aut odit aut loret fugit, sed quia ipsu
-                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nulla
-                                consequat massa quis enim.
-                            </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="related__title">
-                    <h5>RELATED PRODUCTS</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/product/related/rp-1.jpg">
-                        <div class="label new">New</div>
-                        <ul class="product__hover">
-                                <li><a href="~/theme/img/product/related/rp-1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                            </ul>
-                    </div>
-                    <div class="product__item__text">
-                        <h6><a href="#">Buttons tweed blazer</a></h6>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                            <div class="product__details__tab__desc">
+                                <h6>Products Infomation</h6>
+                                <p>
+                                    Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                                    Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus
+                                    suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam
+                                    vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.
+                                    Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat,
+                                    accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a
+                                    pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula
+                                    elementum sed sit amet dui. Vestibulum ante ipsum primis in faucibus orci luctus
+                                    et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam
+                                    vel, ullamcorper sit amet ligula. Proin eget tortor risus.
+                                </p>
+                                <p>
+                                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet
+                                    elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum
+                                    porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus
+                                    nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                                    Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Sed
+                                    porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum
+                                    sed sit amet dui. Proin eget tortor risus.
+                                </p>
+                            </div>
                         </div>
-                        <div class="product__price">$ 59.0</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/product/related/rp-2.jpg">
-                        <ul class="product__hover">
-                            <li><a href="/Theme/img/product/related/rp-2.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
-                    </div>
-                    <div class="product__item__text">
-                        <h6><a href="#">Flowy striped skirt</a></h6>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                        <div class="tab-pane" id="tabs-2" role="tabpanel">
+                            <div class="product__details__tab__desc">
+                                <h6>Products Infomation</h6>
+                                <p>
+                                    Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                                    Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus.
+                                    Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam
+                                    sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo
+                                    eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.
+                                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent
+                                    sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac
+                                    diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante
+                                    ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                                    Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+                                    Proin eget tortor risus.
+                                </p>
+                                <p>
+                                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet
+                                    elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum
+                                    porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus
+                                    nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                                </p>
+                            </div>
                         </div>
-                        <div class="product__price">$ 49.0</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/product/related/rp-3.jpg">
-                        <div class="label stockout">out of stock</div>
-                        <ul class="product__hover">
-                            <li><a href="/Theme/img/shop/related/rp-3.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
-                    </div>
-                    <div class="product__item__text">
-                        <h6><a href="#">Cotton T-Shirt</a></h6>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                            <div class="product__details__tab__desc">
+                                <h6>Products Infomation</h6>
+                                <p>
+                                    Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                                    Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus.
+                                    Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam
+                                    sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo
+                                    eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.
+                                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent
+                                    sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac
+                                    diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ante
+                                    ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                                    Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+                                    Proin eget tortor risus.
+                                </p>
+                            </div>
                         </div>
-                        <div class="product__price">$ 59.0</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/product/related/rp-4.jpg">
-                        <ul class="product__hover">
-                            <li><a href="/Theme/img/product/related/rp-4.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
-                    </div>
-                    <div class="product__item__text">
-                        <h6><a href="#">Slim striped pocket shirt</a></h6>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <div class="product__price">$ 59.0</div>
                     </div>
                 </div>
             </div>
@@ -242,59 +161,78 @@
     </div>
 </section>
 <!-- Product Details Section End -->
-<!-- Instagram Begin -->
-<div class="instagram">
-    <div class="container-fluid">
+<!-- Related Product Section Begin -->
+<section class="related-product">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                <div class="instagram__item set-bg" data-setbg="/Theme/img/instagram/insta-1.jpg">
-                    <div class="instagram__text">
-                        <i class="fa fa-instagram"></i>
-                        <a href="#"> ashion_shop</a>
+            <div class="col-lg-12">
+                <div class="section-title related__product__title">
+                    <h2>Related Product</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="/Theme/img/product/product-1.jpg">
+                        <ul class="product__item__pic__hover">
+                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Crab Pool Security</a></h6>
+                        <h5>$30.00</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                <div class="+instagram__item set-bg" data-setbg="/Theme/img/instagram/insta-2.jpg">
-                    <div class="instagram__text">
-                        <i class="fa fa-instagram"></i>
-                        <a href="#"> ashion_shop</a>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="/Theme/img/product/product-2.jpg">
+                        <ul class="product__item__pic__hover">
+                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Crab Pool Security</a></h6>
+                        <h5>$30.00</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                <div class="instagram__item set-bg" data-setbg="/Theme/img/instagram/insta-3.jpg">
-                    <div class="instagram__text">
-                        <i class="fa fa-instagram"></i>
-                        <a href="#"> ashion_shop</a>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="/Theme/img/product/product-3.jpg">
+                        <ul class="product__item__pic__hover">
+                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Crab Pool Security</a></h6>
+                        <h5>$30.00</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                <div class="instagram__item set-bg" data-setbg="/Theme/img/instagram/insta-4.jpg">
-                    <div class="instagram__text">
-                        <i class="fa fa-instagram"></i>
-                        <a href="#"> ashion_shop</a>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="/Theme/img/product/product-7.jpg">
+                        <ul class="product__item__pic__hover">
+                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                <div class="instagram__item set-bg" data-setbg="/Theme/img/instagram/insta-5.jpg">
-                    <div class="instagram__text">
-                        <i class="fa fa-instagram"></i>
-                        <a href="#"> ashion_shop</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                <div class="instagram__item set-bg" data-setbg="/Theme/img/instagram/insta-6.jpg">
-                    <div class="instagram__text">
-                        <i class="fa fa-instagram"></i>
-                        <a href="#"> ashion_shop</a>
+                    <div class="product__item__text">
+                        <h6><a href="#">Crab Pool Security</a></h6>
+                        <h5>$30.00</h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 

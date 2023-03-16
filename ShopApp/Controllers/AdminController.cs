@@ -35,21 +35,7 @@ namespace ShopApp.WebUI.Controllers
 			return View(values);
 		}
 
-		public IActionResult WomenList()
-		{
-			return View(new ProductModel()
-			{
-				Products = ip.GetALl().Where(x => x.Gender == "Female").ToList(),
-			});
-		}
-
-		public IActionResult ManList()
-		{
-			return View(new ProductModel()
-			{
-				Products = ip.GetALl().Where(x => x.Gender == "Female").ToList(),
-			});
-		}
+		
 
 
 		public IActionResult Index()
@@ -208,7 +194,17 @@ namespace ShopApp.WebUI.Controllers
 		}
 
 
-		public IActionResult CategoryList()
+        public IActionResult ProductList()
+        {
+            return View(new ProductModel()
+            {
+                Products = ip.GetALl().ToList(),
+            });
+
+        }
+
+
+        public IActionResult CategoryList()
 		{
 			return View(new CategoryListModel()
 			{
@@ -216,6 +212,7 @@ namespace ShopApp.WebUI.Controllers
 			});
 
 		}
+
 		[HttpGet]
 		public IActionResult CreateCategory()
 		{

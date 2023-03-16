@@ -34,17 +34,6 @@ namespace ShopApp.WebUI.Controllers
 			});
 		}
 
-		public IActionResult ManList()
-		{
-			var values = ip.GetALl().Where(x => x.Gender == "Male" & x.Condition == "True").ToList();
-			return View(values);
-		}
-
-		public IActionResult WomenList()
-		{
-			var values = ip.GetALl().Where(x => x.Gender == "Female" & x.Condition == "True").ToList();
-			return View(values);
-		}
 
 		public IActionResult Details(int? id)
 		{

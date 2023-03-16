@@ -1,11 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Reflection.Metadata.Ecma335;
 using RequiredAttribute = System.ComponentModel.DataAnnotations.RequiredAttribute;
 
 namespace ShopApp.WebUI.Models
 {
 	public class RegisterModel
 	{
-		[Required]
+        public string? SellerNumber { get; set; }
+
+        [Required]
 		public string FullName { get; set; }
 
 		[Required]
@@ -24,6 +27,8 @@ namespace ShopApp.WebUI.Models
 		[Required]
 		public string Email { get; set; }
 
+        public string Phone { get; set; }
 
-	}
+
+    }
 }

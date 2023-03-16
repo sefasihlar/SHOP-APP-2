@@ -12,7 +12,7 @@ using Options = IyzipayCore.Options;
 
 namespace ShopApp.WebUI.Controllers
 {
-	[Authorize]
+	
 	public class CartController : Controller
 	{
 		private UserManager<AppUser> _userManager;
@@ -49,7 +49,7 @@ namespace ShopApp.WebUI.Controllers
 		public IActionResult AddToCart(int productId, int quantity)
 		{
 			var userId = _userManager.GetUserId(User);
-			_cartManager.AddToCart(userId, productId, quantity);
+			_cartManager.AddToCart("1", productId, quantity);
 			TempData.Put("Message", new ResultMessage()
 			{
 				Title = "Başarılı",

@@ -5,5 +5,9 @@ namespace ShopApp.Entites
 	public class AppUser : IdentityUser<int>
 	{
 		public string FullName { get; set; }
-	}
+        public string? SellerNumber{ get; set; }
+    
+
+
+    }
 }

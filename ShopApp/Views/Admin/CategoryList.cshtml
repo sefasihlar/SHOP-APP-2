@@ -35,7 +35,7 @@
                                         <p class="fw-normal mb-1">@item.Name</p>
                                     </td>
                                     <td>
-                                        <a href="/Admin/EditCategory/@item.Id" class="btn btn-link badge-primary btn-pill btn-sm fw-bold"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                        <a href="/Admin/CategoryEdit/@item.Id" class="btn btn-link badge-primary btn-pill btn-sm fw-bold"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                         <form action="/admin/DeleteCategory/" method="post" style="display:inline">
                                             <input type="hidden" name="id" value="@item.Id" />
                                             <button type="submit" style="color:white;text-decoration:none"

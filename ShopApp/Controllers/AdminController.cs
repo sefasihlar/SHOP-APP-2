@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using ShopApp.Business.Concrete;
 using ShopApp.DataAccess.Concrete.EfCore;
 using ShopApp.Entites;
@@ -257,9 +258,16 @@ namespace ShopApp.WebUI.Controllers
             return RedirectToAction("CategoryList", "Admin");
         }
 
-        public IActionResult EditCategory(int id)
+        [HttpGet]
+        public IActionResult CategoryEdit(int Id)
         {
-            var values = _category.GetByIdWithProducuts(id);
+            if (Id==0)
+            {
+                return View();
+            }
+            var values = _category.GetByIdWithProducuts(Id);
+
+            
 
             var products = new CategoryModel()
             {
@@ -273,7 +281,7 @@ namespace ShopApp.WebUI.Controllers
         }
 
         [HttpPost]
-        public IActionResult EditCategory(CategoryModel model)
+        public IActionResult CategoryEdit(CategoryModel model)
         {
             var values = _category.GetById(model.Id);
 
@@ -338,7 +346,7 @@ namespace ShopApp.WebUI.Controllers
                 Message = "İlişki silme işlemi başarılı bir şekilde gerçekleşti ürün tamamen değil sadece bu categoriden silildi!! :)",
                 Css = "success"
             });
-            return Redirect("/admin/editcategory/" + categoryid);
+            return RedirectToAction("CategoryList","Admin");
         }
     }
 }

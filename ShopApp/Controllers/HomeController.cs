@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShopApp.Business.Concrete;
 using ShopApp.DataAccess.Concrete.EfCore;
+using ShopApp.Entites;
 using ShopApp.Models;
+using ShopApp.WebUI.Models;
 using System.Diagnostics;
 
 namespace ShopApp.Controllers
@@ -25,59 +27,68 @@ namespace ShopApp.Controllers
         }
 
         //Galeri kısmı component kısmıyla yapılcak --start
-        public IActionResult Womans()
+        public IActionResult HomeSliderProducts()
         {
-            var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
-            return View(values);
-        }
+            var productsfilters = new ProductModel()
+            {
+                Products = ip.GetALl().Where(x => x.ProductCategories.Any(x => x.Category.Name == "Ana Sayfa Slider")).ToList()
+            }
 
-        public IActionResult Mans()
-        {
-            var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
-            return View(values);
+            return View(productsfilters);
         }
-        public IActionResult Kids()
-        {
-            var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
-            return View(values);
-        }
-        public IActionResult Accessories()
-        {
-            var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
-            return View(values);
-        }
-        public IActionResult Cosmatics()
-        {
-            var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
-            return View(values);
-        }
+    }
 
-        //galeri kısmı --finish
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+}
 
-        public IActionResult GelAll()
-        {
+    public IActionResult Mans()
+    {
+        var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
+        return View(values);
+    }
+    public IActionResult Kids()
+    {
+        var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
+        return View(values);
+    }
+    public IActionResult Accessories()
+    {
+        var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
+        return View(values);
+    }
+    public IActionResult Cosmatics()
+    {
+        var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
+        return View(values);
+    }
 
-            var values = ip.GetALl();
-            return View(values);
+    //galeri kısmı --finish
 
-        }
+    public IActionResult Privacy()
+    {
+        return View();
+    }
 
-        public IActionResult dneme()
-        {
-            return View();
-        }
+    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    public IActionResult Error()
+    {
+        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
 
+    public IActionResult GelAll()
+    {
+
+        var values = ip.GetALl();
+        return View(values);
 
     }
+
+    public IActionResult dneme()
+    {
+        return View();
+    }
+
+
+}
 }

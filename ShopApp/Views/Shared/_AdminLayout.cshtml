@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using ShopApp.WebUI.Models;
+<!DOCTYPE html>
 <html lang="zxx">
 
 <head>
@@ -21,6 +22,8 @@
     <link rel="stylesheet" href="/Theme/css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="/Theme/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="/Theme/css/style.css" type="text/css">
+    <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 
 <body>
@@ -83,23 +86,23 @@
 
                             @if (User.Identity.IsAuthenticated)
                             {
-                                <div class="header__top__right__auth">
-                                    <a asp-controller="Account" asp-action="Register"><i class="fa fa-user"></i>Hesabım  </a>
-                                </div>
+                                    <div class="header__top__right__auth">
+                                        <a asp-controller="Account" asp-action="Register"><i class="fa fa-user"></i>Hesabım  </a>
+                                    </div>
 
-                                <div class="header__top__right__auth">
-                                    <a asp-controller="Account" asp-action="Logout"><i class="fa fa-sign-out"></i> Çıkış</a>
-                                </div>
+                                    <div class="header__top__right__auth">
+                                        <a asp-controller="Account" asp-action="Logout"><i class="fa fa-sign-out"></i> Çıkış</a>
+                                    </div>
                             }
                             else
                             {
-                                <div class="header__top__right__auth">
-                                    <a asp-controller="Account" asp-action="Register"><i class="fa fa-user"></i>Kayıt Ol</a>
-                                </div>
+                                    <div class="header__top__right__auth">
+                                        <a asp-controller="Account" asp-action="Register"><i class="fa fa-user"></i>Kayıt Ol</a>
+                                    </div>
 
-                                <div class="header__top__right__auth">
-                                    <a asp-controller="Account" asp-action="Login"><i class="fa fa-user"></i> Giriş</a>
-                                </div>
+                                    <div class="header__top__right__auth">
+                                        <a asp-controller="Account" asp-action="Login"><i class="fa fa-user"></i> Giriş</a>
+                                    </div>
                             }
 
                         </div>
@@ -128,8 +131,8 @@
                             <li><a href="./contact.html">İletişim</a></li>
                             <li><a asp-controller="Shop" asp-action="AllList" class="fa fa-arrow-right">Web Site</a></li>
 
-                           
-                  
+
+
                         </ul>
                     </nav>
                 </div>
@@ -142,11 +145,17 @@
     <!-- Header Section End -->
     <!-- Hero Section Begin -->
     @RenderBody()
+    @if (TempData["message"] != null)
+    {
+            <partial name="_resultMessage" model="@(TempData.Get<ResultMessage>("Message"))" />
+    }
     <!-- Bestsellers and Recently Added Tables End -->
     <div style="margin-bottom:350px"></div>
     @await Html.PartialAsync("PartialHome/Footer")
     <!-- Footer Section End -->
     <!-- Js Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="/Theme/js/jquery-3.3.1.min.js"></script>
     <script src="/Theme/js/bootstrap.min.js"></script>
     <script src="/Theme/js/jquery.nice-select.min.js"></script>

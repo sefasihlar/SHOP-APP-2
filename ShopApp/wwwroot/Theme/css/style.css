@@ -31,6 +31,10 @@ h2 {
 	font-size: 36px;
 }
 
+.nice-select swal2-select{
+	display:none;
+}
+
 h3 {
 	font-size: 30px;
 }

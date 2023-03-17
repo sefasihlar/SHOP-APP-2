@@ -1,4 +1,4 @@
-﻿
+﻿@model ShopApp.WebUI.Models.CategoryModel
 @{
     ViewData["Title"] = "EditCategory";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -14,31 +14,18 @@
             </div>
             <div style="margin-top: 15px;" class="row">
                 <div class="col-8">
-
-                    <div class="row">
-                        <div class="col-3">
-                            <span class="order-edit">
-                                Kategori İsmi
-                            </span>
+                    <form asp-controller="admin" asp-action="CreateCategory" method="post">
+                        <div class="row">
+                            <div class="col-3">
+                                <span class="order-edit">
+                                    Kategori İsmi
+                                </span>
+                            </div>
+                            <div class="col-9">
+                                <input class="order-edit_input" type="text" value="@Model.Name" placeholder="@Model.Name">
+                            </div>
                         </div>
-                        <div class="col-9">
-                            <input class="order-edit_input" type="text" placeholder="Kategori Adını Giriniz">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-3">
-                            <span class="order-edit">
-                                Kategori Durumu
-                            </span>
-                        </div>
-                        <div class="col-9">
-                            <select class="select" name="" id="">
-                                <option value="">Aktif</option>
-                                <option value="">Pasif</option>
-                            </select>
-                        </div>
-                    </div>
+                    </form>
                     <div class="row ">
                         <button id="save" class="primary-btn ">Kaydet</button>
                     </div>
@@ -64,19 +51,58 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>12412412</td>
-                            <td><img width="35px" src="../img/cart/cart-1.jpg" alt=""></td>
-                            <td>Tuz</td>
-                            <td>75 Kg</td>
-                            <td>15</td>
-                            <td>Aktif</td>
-                        </tr>
-                    </tbody>
+                        @foreach (var item in Model.Products)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="/Theme/img/product/@item.ImageUrl"
+                                             alt=""
+                                             style="width: 45px; height: 45px"
+                                             class="rounded-circle" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="fw-normal mb-1">@item.Name</p>
+                                </td>
+                                <td>
+                                    <p class="fw-normal mb-1">@item.Price</p>
+                                </td>
+                                @if (item.Condition == "True")
+                                {
+                                    <td>
+                                        <span class="badge badge-success rounded-pill d-inline">Active</span>
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td>
+                                        <span class="badge badge-danger rounded-pill d-inline">False</span>
+                                    </td>
+                                }
 
+                                <td>@item.Gender</td>
+                                <td></td>
+                                <td>
+                                    <a href="/admin/products/@item.Id" class="btn btn-link badge-primary btn-pill btn-sm fw-bold">Detay</a>
+
+                                    <form action="/admin/deletefromcategory/" method="post" style="display:inline">
+                                        <input type="hidden" name="id" value="@item.Id" />
+                                        <input type="hidden" name="categoryid" value="@Model.Id" />
+                                        <button type="submit" style="color:white;text-decoration:none"
+                                                class="btn btn-link badge-danger btn-pill btn-sm fw-bold">
+                                            DELETE
+                                        </button>
+                                    </form>
+
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
                 </table>
             </div>
-
         </div>
     </div>
 </div>

@@ -53,15 +53,11 @@
             <div class="header__cart__price">item: <span>$150.00</span></div>
         </div>
         <div class="humberger__menu__widget">
-
-            <div class="header__top__right__auth">
-                <a href="#"><i class="fa fa-user"></i> Login</a>
-            </div>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li class="active"><a href="./index.html">Anasayfa</a></li>
-                <li><a href="./shop-grid.html">Alışveriş</a></li>
+                <li class="active"><a asp-controller="Home" asp-action="Index">Anasayfa</a></li>
+                <li><a asp-controller="Shop" asp-action="AllList">Alışveriş</a></li>
                 <li><a href="./contact.html">İletişim</a></li>
             </ul>
         </nav>
@@ -99,9 +95,8 @@
                                 <a href="#"><i class="fa fa-instagram"></i></a>
 
                             </div>
-
                             <div class="header__top__right__auth">
-                                <a href="#"><i class="fa fa-user"></i> Login</a>
+                                <a asp-controller="Account" asp-action="RegisterUser">   <i class="fa fa-plus-square" aria-hidden="true"></i>  Kayıt Ol</a>
                             </div>
                         </div>
                     </div>
@@ -171,7 +166,7 @@
 
             <!-- Remind Passowrd -->
             <div id="formFooter">
-                <a style="margin:10px 30px 0px 15px" asp-controller="Account" asp-action="ForgotPassword">Forgot Password ?</a>
+                <a style="margin:10px 30px 0px 15px" asp-controller="Account" asp-action="ForgotPassword">Şifrenimi Unuttun ?</a>
             </div>
 
         </div>

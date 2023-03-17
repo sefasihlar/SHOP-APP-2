@@ -36,7 +36,7 @@ h2 {
   display: flex;
   align-items: center;
   flex-direction: column; 
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   min-height: 100%;
   padding: 20px;
@@ -47,7 +47,7 @@ h2 {
   border-radius: 10px 10px 10px 10px;
   background: #fff;
   padding: 30px;
-  width: 70%;
+  width: 35%;
   position: relative;
   padding: 0px;
   -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
@@ -304,8 +304,8 @@ input[type=text]:placeholder {
         -ms-transform: scale(0.95);
         transform: scale(0.95);
       }
-      
-      input[type=text] {
+
+    input[type=text], input[type=button] {
         background-color: #f6f6f6;
         border: none;
         color: #0d0d0d;
@@ -324,9 +324,9 @@ input[type=text]:placeholder {
         transition: all 0.5s ease-in-out;
         -webkit-border-radius: 5px 5px 5px 5px;
         border-radius: 5px 5px 5px 5px;
-      }
+    }
       
-      input[type=text]:focus {
+      input[type=text]:focus ,input[type=button]  {
         background-color: #fff;
         border-bottom: 2px solid #7fad39;
       }

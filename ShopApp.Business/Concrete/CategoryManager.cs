@@ -4,48 +4,48 @@ using ShopApp.Entites;
 
 namespace ShopApp.Business.Concrete
 {
-	public class CategoryManager : ICategoryService
-	{
-		private ICategoryDal _categoryDal;
+    public class CategoryManager : ICategoryService
+    {
+        private ICategoryDal _categoryDal;
 
-		public CategoryManager(ICategoryDal categorydal)
-		{
-			_categoryDal = categorydal;
-		}
+        public CategoryManager(ICategoryDal categorydal)
+        {
+            _categoryDal = categorydal;
+        }
 
-		public void Create(Category entity)
-		{
-			_categoryDal.Create(entity);
-		}
+        public void Create(Category entity)
+        {
+            _categoryDal.Create(entity);
+        }
 
-		public void Delete(Category entity)
-		{
-			_categoryDal.Delete(entity);
-		}
+        public void Delete(Category entity)
+        {
+            _categoryDal.Delete(entity);
+        }
 
-		public void DeleteFromCategory(int id, int categoryid)
-		{
-			_categoryDal.DeleteFromCategory(id, categoryid);
-		}
+        public void DeleteFromCategory(int id, int categoryid)
+        {
+            _categoryDal.DeleteFromCategory(id, categoryid);
+        }
 
-		public List<Category> GetALl()
-		{
-			return _categoryDal.GetAll().ToList();
-		}
+        public List<Category> GetALl()
+        {
+            return _categoryDal.GetAll().ToList();
+        }
 
-		public Category GetById(int id)
-		{
-			return _categoryDal.GetById(id);
-		}
+        public Category GetById(int id)
+        {
+            return _categoryDal.GetById(id);
+        }
 
-		public Category GetByIdWithProducuts(int id)
-		{
-			return _categoryDal.GetByIdWithProducuts(id);
-		}
+        public Category GetByIdWithProducuts(int id)
+        {
+            return _categoryDal.GetByIdWithProducuts(id);
+        }
 
-		public void Update(Category entity)
-		{
-			_categoryDal.Update(entity);
-		}
-	}
+        public void Update(Category entity)
+        {
+            _categoryDal.Update(entity);
+        }
+    }
 }

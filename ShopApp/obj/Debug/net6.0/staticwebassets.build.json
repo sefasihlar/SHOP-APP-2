@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0yJakNJJVfEfi2FUu1wVfaNkbJKqfQtwyAt/5UN5fbM=",
+  "Hash": "P9SQsN/G/KkIckQcEZt9P+n8z3u4LOFQyq5K69NZJfQ=",
   "Source": "ShopApp.WebUI",
   "BasePath": "_content/ShopApp.WebUI",
   "Mode": "Default",
@@ -2735,6 +2735,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Theme\\img\\product\\uxqzv5e21oo.png"
+    },
+    {
+      "Identity": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\y32nzeny5b0.png",
+      "SourceId": "ShopApp.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\",
+      "BasePath": "_content/ShopApp.WebUI",
+      "RelativePath": "Theme/img/product/y32nzeny5b0.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\img\\product\\y32nzeny5b0.png"
     },
     {
       "Identity": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\index.html",

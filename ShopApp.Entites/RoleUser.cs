@@ -2,7 +2,7 @@
 
 namespace ShopApp.Entites
 {
-	public class RoleUser : IdentityUserRole<int>
-	{
-	}
+    public class RoleUser : IdentityUserRole<int>
+    {
+    }
 }

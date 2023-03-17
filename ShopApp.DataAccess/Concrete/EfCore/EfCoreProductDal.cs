@@ -5,8 +5,8 @@ using ShopApp.Entites;
 namespace ShopApp.DataAccess.Concrete.EfCore
 {
 
-	public class EfCoreProductDal : EfCoreGenericRepository<Product, ShopContext>, IProductDal
-	{
+    public class EfCoreProductDal : EfCoreGenericRepository<Product, ShopContext>, IProductDal
+    {
         public void Create(Product entity, int[] categoryIds)
         {
             using (var contex = new ShopContext())
@@ -28,99 +28,99 @@ namespace ShopApp.DataAccess.Concrete.EfCore
                         ProductId = entity.Id
                     }).ToList();
 
-					
+
                     contex.SaveChanges();
                 }
             }
         }
 
         public Product GetByIdWithCategories(int id)
-		{
-			using (var context = new ShopContext())
-			{
-				return context.Products
-					.Where(x => x.Id == id)
-					.Include(x => x.ProductCategories)
-					.ThenInclude(x => x.Category)
-					.FirstOrDefault();
-			}
-		}
+        {
+            using (var context = new ShopContext())
+            {
+                return context.Products
+                    .Where(x => x.Id == id)
+                    .Include(x => x.ProductCategories)
+                    .ThenInclude(x => x.Category)
+                    .FirstOrDefault();
+            }
+        }
 
-		public int GetCountByCategory(string category)
-		{
-			using (var contex = new ShopContext())
+        public int GetCountByCategory(string category)
+        {
+            using (var contex = new ShopContext())
 
-			{
-				//ekstra sorgu gönderebilmek için "asQueryable" yi kullandik
-				var products = contex.Products.AsQueryable();
-				//category bilgisi eger null degilse categoryle gore filtreleme yaparız
-				if (!string.IsNullOrEmpty(category))
-				{
-					products = products
-						.Include(x => x.ProductCategories)
-						.ThenInclude(x => x.Category)
-						//"Any"bize true yada false deger dondurur
-						.Where(x => x.ProductCategories.Any(a => a.Category.Name.ToLower() == category.ToLower()));
-				}
-				//sayisal bir değer döndürsün
-				return products.Count();
-			};
-		}
+            {
+                //ekstra sorgu gönderebilmek için "asQueryable" yi kullandik
+                var products = contex.Products.AsQueryable();
+                //category bilgisi eger null degilse categoryle gore filtreleme yaparız
+                if (!string.IsNullOrEmpty(category))
+                {
+                    products = products
+                        .Include(x => x.ProductCategories)
+                        .ThenInclude(x => x.Category)
+                        //"Any"bize true yada false deger dondurur
+                        .Where(x => x.ProductCategories.Any(a => a.Category.Name.ToLower() == category.ToLower()));
+                }
+                //sayisal bir değer döndürsün
+                return products.Count();
+            };
+        }
 
-		public IEnumerable<Product> GetPopularProduct()
-		{
-			throw new NotImplementedException();
-		}
-		//Kategoriye göre filtereleme işlemi
-		public List<Product> GetProductsByCategory(string category, int page, int pageSize)
-		{
-			using (var contex = new ShopContext())
+        public IEnumerable<Product> GetPopularProduct()
+        {
+            throw new NotImplementedException();
+        }
+        //Kategoriye göre filtereleme işlemi
+        public List<Product> GetProductsByCategory(string category, int page, int pageSize)
+        {
+            using (var contex = new ShopContext())
 
-			{
-				//ekstra sorgu gönderebilmek için "asQueryable" yi kullandik
-				var products = contex.Products.AsQueryable();
-				//category bilgisi eger null degilse categoryle gore filtreleme yaparız
-				if (!string.IsNullOrEmpty(category))
-				{
-					products = products
-						.Include(x => x.ProductCategories)
-						.ThenInclude(x => x.Category)
-						//"Any"bize true yada false deger dondurur
-						.Where(x => x.ProductCategories.Any(a => a.Category.Name.ToLower() == category.ToLower()));
-				}
-				//hangi saydaki ürünlerin alınacaginin yapıldıgı kısım
-				return products.Skip((page - 1) * pageSize).Take(pageSize).ToList();
-			};
-		}
+            {
+                //ekstra sorgu gönderebilmek için "asQueryable" yi kullandik
+                var products = contex.Products.AsQueryable();
+                //category bilgisi eger null degilse categoryle gore filtreleme yaparız
+                if (!string.IsNullOrEmpty(category))
+                {
+                    products = products
+                        .Include(x => x.ProductCategories)
+                        .ThenInclude(x => x.Category)
+                        //"Any"bize true yada false deger dondurur
+                        .Where(x => x.ProductCategories.Any(a => a.Category.Name.ToLower() == category.ToLower()));
+                }
+                //hangi saydaki ürünlerin alınacaginin yapıldıgı kısım
+                return products.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+            };
+        }
 
-		//ilişkili veri güncelleme işlemi
-		public void Update(Product entity, int[] categoryIds)
-		{
-			using (var contex = new ShopContext())
-			{
-				var product = contex.Products
-								.Include(x => x.ProductCategories)
-								.FirstOrDefault(x => x.Id == entity.Id);
-				if (product != null)
-				{
-					product.Name = entity.Name;
-					product.ImageUrl = entity.ImageUrl;
-					product.Price = entity.Price;
-					product.Gender = entity.Gender;
-					product.Condition = entity.Condition;
+        //ilişkili veri güncelleme işlemi
+        public void Update(Product entity, int[] categoryIds)
+        {
+            using (var contex = new ShopContext())
+            {
+                var product = contex.Products
+                                .Include(x => x.ProductCategories)
+                                .FirstOrDefault(x => x.Id == entity.Id);
+                if (product != null)
+                {
+                    product.Name = entity.Name;
+                    product.ImageUrl = entity.ImageUrl;
+                    product.Price = entity.Price;
+                    product.Gender = entity.Gender;
+                    product.Condition = entity.Condition;
 
-					product.ProductCategories = categoryIds.Select(x => new ProductCategory()
-					{
-						CategoryId = x,
-						ProductId = entity.Id
-					}).ToList();
+                    product.ProductCategories = categoryIds.Select(x => new ProductCategory()
+                    {
+                        CategoryId = x,
+                        ProductId = entity.Id
+                    }).ToList();
 
-					contex.SaveChanges();
+                    contex.SaveChanges();
 
 
 
-				}
-			}
-		}
-	}
+                }
+            }
+        }
+    }
 }

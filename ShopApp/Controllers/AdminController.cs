@@ -66,11 +66,12 @@ namespace ShopApp.WebUI.Controllers
             {
                 Id = model.Id,
                 Name = model.Name,
+                Description = model.Description,
                 Price = model.Price,
                 Gender = model.Gender,
                 ImageUrl = file.FileName,
                 Condition = model.Condition,
-                
+
             };
 
             if (file != null)
@@ -82,14 +83,14 @@ namespace ShopApp.WebUI.Controllers
                 }
             }
 
-            if (values!=null)
+            if (values != null)
             {
                 ip.Create(values);
             }
 
             if (values != null)
             {
-                ip.Create(values,categoryIds);
+                ip.Create(values, categoryIds);
                 TempData.Put("Message", new ResultMessage()
                 {
                     Title = "Başarılı",
@@ -150,6 +151,7 @@ namespace ShopApp.WebUI.Controllers
             {
                 Id = values.Id,
                 Name = values.Name,
+                Description = values.Description,
                 Price = values.Price,
                 ImageUrl = values.ImageUrl,
                 Gender = values.Gender,
@@ -177,6 +179,7 @@ namespace ShopApp.WebUI.Controllers
             }
 
             entity.Name = model.Name;
+            entity.Description = model.Description;
             entity.Price = model.Price;
             entity.Gender = model.Gender;
             entity.Condition = model.Condition;
@@ -253,16 +256,20 @@ namespace ShopApp.WebUI.Controllers
 
             return RedirectToAction("CategoryList", "Admin");
         }
-        [HttpGet]
+
         public IActionResult EditCategory(int id)
         {
             var values = _category.GetByIdWithProducuts(id);
-            return View(new CategoryModel()
+
+            var products = new CategoryModel()
             {
                 Id = values.Id,
                 Name = values.Name,
                 Products = values.ProductCategories.Select(p => p.Product).ToList()
-            });
+            };
+
+            return View(products);
+
         }
 
         [HttpPost]

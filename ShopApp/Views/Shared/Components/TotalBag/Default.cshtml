@@ -1,7 +1,3 @@
 ﻿@model ShopApp.WebUI.Models.CartModel
-<li>
-    <a asp-controller="Cart" asp-action="Index">
-        <span class="icon_bag_alt"></span>
-        <div class="tip">@Model.BagTotal()</div>
-    </a>
-</li>
+<li><a asp-controller="Cart" asp-action="Index"><i class="fa fa-shopping-bag"></i> <span>@Model.BagTotal()</span></a></li>
+

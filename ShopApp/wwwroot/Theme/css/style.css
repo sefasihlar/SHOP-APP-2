@@ -1095,12 +1095,18 @@ ol {
 
 .sidebar__item {
 	margin-bottom: 35px;
+	padding: 5%;
+
 }
 .sidebar__item li:hover
 {
-	transition:0.3s;
-	font-weight: 900;
-	transform: scale(1.2);
+	transition: 0.05s;
+	padding-left:6px ;
+
+}
+.sidebar__item li:focus
+{
+	color: red;
 
 }
 .sidebar__item.sidebar__item__color--option {

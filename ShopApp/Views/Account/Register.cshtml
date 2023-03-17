@@ -165,41 +165,28 @@
             </div>
 
             <!-- Register Form -->
-            <form class="user">
+             <form class="user" asp-controller="Account" asp-action="Register" method="post">
                 <div class="row">
                     <div class="col-6 ">
-                        <h2><strong>Yetkili</strong></h2>
-                        <input type="text" id="login" class="fadeIn second" name="login" placeholder="Adınız...">
-                        <input type="text" class="fadeIn third" name="login" placeholder="Soyadınız...">
-                        <input type="text" class="fadeIn third" name="login" placeholder="Telefon Numaranız...">
+
+                        <input type="text" id="login" class="fadeIn second" asp-for="@Model.FullName" placeholder="Ad-Soyad...">
+                             <span asp-validation-for="FullName" class="text-danger"></span>
+                        <input type="text" class="fadeIn third" asp-for="@Model.UserName" placeholder="Kullanıcı Adınız...">
+                           <span asp-validation-for="UserName" class="text-danger"></span>
+                        <input type="text" class="fadeIn third" asp-for="@Model.Phone" placeholder="Telefon Numaranız...">
                     </div>
                     <div class="col-6">
-                        <h2><strong>Bayi</strong></h2><br>
-                        <input type="text" class="fadeIn third" name="login" placeholder="E-Posta Adresiniz...">
-                        <input type="text" id="password" class="fadeIn third" name="login" placeholder="Şifreniz...">
-                        <input type="text" id="password" class="fadeIn third" name="login" placeholder="Şifre Tekrar...">
+                        <input type="text" class="fadeIn third" asp-for="@Model.SellerNumber" placeholder="Bayi Numarası...">
+                        <input type="text" class="fadeIn third" asp-for="Email" placeholder="E-Posta Adresiniz...">
+                             <span asp-validation-for="Email" class="text-danger"></span>
+                        <input type="text" id="password" class="fadeIn third" asp-for="@Model.Password" placeholder="Şifreniz...">
+                               <span asp-validation-for="Password" class="text-danger"></span>
+                        <input type="text" id="password" class="fadeIn third" asp-for="@Model.RePassword"placeholder="Şifre Tekrar...">
+                               <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
                 </div>
-                <input type="submit" class="fadeIn fourth " value="Log In">
+                <input type="submit" class="fadeIn fourth" value="Kayıt Ol">
             </form>
-            <form class="seller">
-                <div class="row">
-                    <div class="col-6 ">
-                        <input type="text" id="login" class="fadeIn second" name="login" placeholder="Adınız...">
-                        <input type="text" class="fadeIn third" name="login" placeholder="Soyadınız...">
-                        <input type="text" class="fadeIn third" name="login" placeholder="Telefon Numaranız...">
-                    </div>
-                    <div class="col-6">
-                        <input type="text" class="fadeIn third" name="login" placeholder="E-Posta Adresiniz...">
-                        <input type="text" id="password" class="fadeIn third" name="login" placeholder="Şifreniz...">
-                        <input type="text" id="password" class="fadeIn third" name="login" placeholder="Şifre Tekrar...">
-                    </div>
-                </div>
-                <input type="submit" class="fadeIn fourth " value="Log In">
-            </form>
-
-
-
         </div>
     </div>
     <!-- Footer Section Begin -->

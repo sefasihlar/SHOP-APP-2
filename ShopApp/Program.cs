@@ -17,7 +17,7 @@ RoleManager<AppUser> userManager;
 //start Authorization
 builder.Services.ConfigureApplicationCookie(o =>
 {
-	o.ExpireTimeSpan = TimeSpan.FromMinutes(1);
+	o.ExpireTimeSpan = TimeSpan.FromMinutes(20);
 	o.SlidingExpiration = true;
 });
 

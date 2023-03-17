@@ -4,5 +4,104 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>EditProduct</h1>
+<div style="background-color:rgb(249, 249, 249);border-radius: 15px;padding: 5%;" class="container">
+    <div class="row ">
+        <img style="margin: auto;" src="../img/featured/feature-1.jpg" alt="">
+    </div>
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="row">
+                <h4>
+                    <strong> Ürün Bilgileri </strong>
+                </h4><br>
+            </div>
+            <div style="margin-top: 15px;" class="row">
+                <div class="col-8">
+
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="order-edit">
+                                Ürün İsmi
+                            </span>
+                        </div>
+                        <div class="col-9">
+                            <input class="order-edit_input" type="text" placeholder="Ürün Adını Giriniz">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="order-edit">
+                                Ürün Detayları
+                            </span>
+                        </div>
+                        <div class="col-9">
+                            <textarea style="height:70px ;" class="order-edit_input  m-1" placeholder="Ürün Bilgilerini Giriniz"> </textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="order-edit">
+                                Ürün Miktarı
+                            </span>
+                        </div>
+                        <div class="col-9">
+                            <input class="order-edit_input" type="text" placeholder="Ürün Miktarı Giriniz">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="order-edit">
+                                Ürün Fiyatı
+                            </span>
+                        </div>
+                        <div class="col-9">
+                            <input class="order-edit_input" type="text" placeholder="Ürün Fiyatı Giriniz">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="order-edit">
+                                Ürün Durumu
+                            </span>
+                        </div>
+                        <div class="col-9">
+                            <select class="select" name="" id="">
+                                <option value="">Aktif</option>
+                                <option value="">Pasif</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="order-edit">
+                                Ürün Resmi
+                            </span>
+                        </div>
+                        <div class="col-9">
+                            <input type="file" placeholder="Dosya Yükleyiniz">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <button id="save" class="primary-btn ">Kaydet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <h4><strong>Kategoriler</strong></h4>
+            <br>
+            <div>
+                <label class="order-edit"><input type="checkbox" name="checkbox" value="value">Baharatlar</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="checkbox" value="value">Çaylar</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="checkbox" value="value">Setler</label>
+            </div>
+
+        </div>
+    </div>
+</div>
 

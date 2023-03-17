@@ -45,6 +45,14 @@
       "PackagePath": "staticwebassets\\Theme\\admin\\admin_category_list.html"
     },
     {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\admin\\admin_edit_category.html",
+      "PackagePath": "staticwebassets\\Theme\\admin\\admin_edit_category.html"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\admin\\admin_edit_product.html",
+      "PackagePath": "staticwebassets\\Theme\\admin\\admin_edit_product.html"
+    },
+    {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\admin\\admin_index.html",
       "PackagePath": "staticwebassets\\Theme\\admin\\admin_index.html"
     },
@@ -305,6 +313,14 @@
       "PackagePath": "staticwebassets\\Theme\\img\\product\\discount\\pd-6.jpg"
     },
     {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\fnq2jqswu1n.png",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\fnq2jqswu1n.png"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\o5kfzzzpax0.png",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\o5kfzzzpax0.png"
+    },
+    {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\product-1.jpg",
       "PackagePath": "staticwebassets\\Theme\\img\\product\\product-1.jpg"
     },
@@ -351,6 +367,14 @@
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\product-9.jpg",
       "PackagePath": "staticwebassets\\Theme\\img\\product\\product-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\rrdx3twvcbr.png",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\rrdx3twvcbr.png"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\uxqzv5e21oo.png",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\uxqzv5e21oo.png"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\index.html",

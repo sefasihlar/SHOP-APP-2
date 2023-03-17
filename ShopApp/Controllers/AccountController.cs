@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using ShopApp.Business.Abstract;
@@ -10,6 +11,7 @@ using ShopApp.WebUI.Models;
 
 namespace ShopApp.WebUI.Controllers
 {
+	
 	[AutoValidateAntiforgeryToken]
 	public class AccountController : Controller
 	{
@@ -153,6 +155,7 @@ namespace ShopApp.WebUI.Controllers
 					Message = "Mail yada şifre yanlış bilgiri doğru girdiğinizden emini olunuz",
 					Css = "error"
 				});
+
 				return View(model);
 
 			}
@@ -175,9 +178,7 @@ namespace ShopApp.WebUI.Controllers
 				return View(model);
 			}
 
-			var user = await _userManager.FindByEmailAsync(model.Email);
-
-
+			var user = await _userManager.FindByNameAsync(model.UserName);
 
 			if (user == null)
 			{

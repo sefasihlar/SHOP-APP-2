@@ -61,7 +61,84 @@
     </div>
     <!-- Humberger End -->
     <!-- Header Section Begin -->
-    @await Html.PartialAsync("PartialHome/Navbar")
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i>info@mutlubaharat.com</li>
+                                <li> 100₺ ve üzeri kargo bedava</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+
+                            </div>
+
+
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <div class="header__top__right__auth">
+                                    <a asp-controller="Account" asp-action="Register"><i class="fa fa-user"></i>Hesabım  </a>
+                                </div>
+
+                                <div class="header__top__right__auth">
+                                    <a asp-controller="Account" asp-action="Logout"><i class="fa fa-sign-out"></i> Çıkış</a>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="header__top__right__auth">
+                                    <a asp-controller="Account" asp-action="Register"><i class="fa fa-user"></i>Kayıt Ol</a>
+                                </div>
+
+                                <div class="header__top__right__auth">
+                                    <a asp-controller="Account" asp-action="Login"><i class="fa fa-user"></i> Giriş</a>
+                                </div>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <nav class="header__menu">
+
+                        <ul>
+                            <li>
+                                <div class="col-lg-3 text-center">
+                                    <div class="header__logo">
+                                        <a href="./index.html"><img src="/Theme/img/logo.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a asp-controller="Admin" asp-action="Index">Anasayfa</a></li>
+                            <li><a asp-controller="Admin" asp-action="ProductList">Ürünler</a></li>
+                            <li><a asp-controller="Admin" asp-action="CategoryList">Kategoriler</a></li>
+                            <li><a asp-controller="Admin" asp-action="OrderList">Siparişler</a></li>
+                            <li><a href="./contact.html">İletişim</a></li>
+                            <li><a asp-controller="Shop" asp-action="AllList" class="fa fa-arrow-right">Web Site</a></li>
+
+                           
+                  
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
     <!-- Header Section End -->
     <!-- Hero Section Begin -->
     @RenderBody()

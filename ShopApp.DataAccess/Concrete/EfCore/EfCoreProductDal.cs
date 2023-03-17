@@ -7,7 +7,34 @@ namespace ShopApp.DataAccess.Concrete.EfCore
 
 	public class EfCoreProductDal : EfCoreGenericRepository<Product, ShopContext>, IProductDal
 	{
-		public Product GetByIdWithCategories(int id)
+        public void Create(Product entity, int[] categoryIds)
+        {
+            using (var contex = new ShopContext())
+            {
+                var product = contex.Products
+                                .Include(x => x.ProductCategories)
+                                .FirstOrDefault(x => x.Id == entity.Id);
+                if (product != null)
+                {
+                    product.Name = entity.Name;
+                    product.ImageUrl = entity.ImageUrl;
+                    product.Price = entity.Price;
+                    product.Gender = entity.Gender;
+                    product.Condition = entity.Condition;
+
+                    product.ProductCategories = categoryIds.Select(x => new ProductCategory()
+                    {
+                        CategoryId = x,
+                        ProductId = entity.Id
+                    }).ToList();
+
+					
+                    contex.SaveChanges();
+                }
+            }
+        }
+
+        public Product GetByIdWithCategories(int id)
 		{
 			using (var context = new ShopContext())
 			{

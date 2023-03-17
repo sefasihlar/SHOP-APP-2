@@ -1,9 +1,12 @@
-﻿
+﻿@model ShopApp.WebUI.Models.LoginModel
 @{
     ViewData["Title"] = "Login";
     Layout = null;
 }
-
+@section  Scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    }
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -136,18 +139,26 @@
                 </svg>
                 </i><br>
                 <h3>Bilgileriniz</h3>
+                <br />
             </div>
 
             <!-- Login Form -->
-            <form id="loginplace" class="user">
+            <form id="loginplace" class="user" asp-controller="Account" asp-action="Login" method="post">
                 <div class="row">
                     <div class="col-12">
-                        <input type="text" id="login" class="fadeIn second" name="login" placeholder=" Kullanıcı Adınız...">
-                        <input type="text" class="fadeIn third" name="login" placeholder="Şifreniz...">
+                        <input type="text" asp-for="@Model.UserName" value="@Model.UserName" id="login" class="fadeIn second" placeholder=" Kullanıcı Adınız...">
+                        <br />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                        <br />
+
+                        <input type="password"  class="fadeIn third" asp-for="Password" value="@Model.Password" placeholder="Şifreniz...">
+                        <br />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                        <br />
                     </div>
 
                 </div>
-                <a href="./index.html" class="site-btn fadeIn fourth ">Giriş Yap</a>
+                <button type="submit" class="site-btn fadeIn fourth ">Giriş Yap</button>
             </form>
             <div style="display: none;" id="forgotMail" class="row">
                 <div class="col-12">
@@ -160,7 +171,7 @@
 
             <!-- Remind Passowrd -->
             <div id="formFooter">
-                <a id="forgotpassword" style="cursor: pointer;" class="underlineHover">Forgot Password?</a>
+                <a style="margin:10px 30px 0px 15px" asp-controller="Account" asp-action="ForgotPassword">Forgot Password ?</a>
             </div>
 
         </div>

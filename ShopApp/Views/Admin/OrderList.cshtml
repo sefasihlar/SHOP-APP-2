@@ -1,8 +1,53 @@
-﻿
+﻿@using ShopApp.WebUI.Models
+@model OrderInfoListModel
 @{
     ViewData["Title"] = "OrderList";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>OrderList</h1>
+<div class="container">
+    <h2 class="text-center"><strong>Son Siparişler</strong></h2><br>
+    <div class="row">
+        <div class="col-12">
+            <div class=" tablo row">
+                <table class="table">
+                    <thead>
+                    <th>Sipariş No</th>
+                    <th> Ad-Soyad</th>
+                    <th> Telefon</th>
+                    <th> Email</th>
+                    <th> Adres</th>
+                    <th>Tarih</th>
+                    <th>Ödeme Id</th>
+                    <th>Görüntüle</th>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Orders)
+                        {
+                            <tr>
+                                <td>@item.OrderNumber</td>
+                                <td>@item.FistName @item.LastName</td>
+                                <td>@item.Phone</td>
+                                <td>@item.Email</td>
+                                <td>@item.Address</td>
+                                <td>@item.OrderTime.ToLongDateString()</td>
+                                <td>@item.PaymentId</td>
+                                <td>
+                                    <a href="/admin/OrderDetails/@item.Id" class="btn btn-link badge-primary btn-pill btn-sm fw-bold">Detay</a>
+                                </td>
+                            </tr>
+
+                        }
+
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
 

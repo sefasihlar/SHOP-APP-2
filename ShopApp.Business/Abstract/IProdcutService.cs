@@ -7,7 +7,8 @@ namespace ShopApp.Business.Abstract
 		Product GetById(int id);
 		Product GetByIdWithCategories(int id);
 		void Create(Product entity);
-		void Update(Product entity);
+        void Create(Product entity, int[] categoryIds);
+        void Update(Product entity);
 		void Update(Product entity, int[] categoryIds);
 		void Delete(Product entity);
 		List<Product> GetALl();

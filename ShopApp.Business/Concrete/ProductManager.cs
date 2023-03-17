@@ -13,12 +13,17 @@ namespace ShopApp.Business.Concrete
 			_productDal = productdal;
 		}
 
-		public void Create(Product entity)
+		public void Create(Product entity, int[] categoryIds)
 		{
-			_productDal.Create(entity);
+			_productDal.Create(entity,categoryIds);
 		}
 
-		public void Delete(Product entity)
+        public void Create(Product entity)
+        {
+			_productDal.Create(entity);
+        }
+
+        public void Delete(Product entity)
 		{
 			_productDal.Delete(entity);
 		}

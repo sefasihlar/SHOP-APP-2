@@ -1,17 +1,21 @@
-﻿
+﻿@using ShopApp.Entites;
+@model ShopApp.WebUI.Models.AddProductModel
 @{
     ViewData["Title"] = "CreateProduct";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div style="background-color:rgb(249, 249, 249);border-radius: 15px;padding: 3%;" class="container">
+    <form asp-controller="Admin" asp-action="CreateProduct" method="post" enctype="multipart/form-data">
     <div class="row">
+         
         <div class="col-lg-9">
             <div class="row">
                 <h4>
                     <strong> Ürün Bilgileri </strong>
                 </h4><br>
             </div>
+          
             <div style="margin-top: 15px;" class="row">
                 <div class="col-8">
 
@@ -22,17 +26,7 @@
                             </span>
                         </div>
                         <div class="col-9">
-                            <input class="order-edit_input" type="text" placeholder="Ürün Adını Giriniz">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <span class="order-edit">
-                                Ürün Miktarı
-                            </span>
-                        </div>
-                        <div class="col-9">
-                            <input class="order-edit_input" type="text" placeholder="Ürün Miktarı Giriniz">
+                                <input asp-for="Name" value="@Model.Name" class="order-edit_input" type="text" placeholder="Ürün Adını Giriniz">
                         </div>
                     </div>
                     <div class="row">
@@ -42,7 +36,7 @@
                             </span>
                         </div>
                         <div class="col-9">
-                            <input class="order-edit_input" type="text" placeholder="Ürün Fiyatı Giriniz">
+                                <input asp-for="Price" value="@Model.Price" class="order-edit_input" type="text" placeholder="Ürün Fiyatı Giriniz">
                         </div>
                     </div>
                     <div class="row">
@@ -52,9 +46,9 @@
                             </span>
                         </div>
                         <div class="col-9">
-                            <select class="select" name="" id="">
-                                <option value="">Aktif</option>
-                                <option value="">Pasif</option>
+                            <select class="select" name="Condition" id="">
+                                <option value="True">Aktif</option>
+                                <option value="False">Pasif</option>
                             </select>
                         </div>
                     </div>
@@ -66,7 +60,7 @@
                             </span>
                         </div>
                         <div class="col-9">
-                            <input type="file" placeholder="Dosya Yükleyiniz">
+                            <input type="file" name="file" placeholder="Dosya Yükleyiniz">
                         </div>
                     </div>
                     <div class="row ">
@@ -74,21 +68,20 @@
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="col-3">
             <h4><strong>Kategoriler</strong></h4>
             <br>
-            <div>
-                <label class="order-edit"><input type="checkbox" name="checkbox" value="value">Baharatlar</label>
-            </div>
-            <div>
-                <label><input type="checkbox" name="checkbox" value="value">Çaylar</label>
-            </div>
-            <div>
-                <label><input type="checkbox" name="checkbox" value="value">Setler</label>
-            </div>
+                @foreach (var item in (List<Category>)ViewBag.Categories)
+                {
 
+                    <div>
+                        <label><input type="checkbox" name="categoryIds" value="@item.Id">@item.Name</label>
+                    </div>
+                }
         </div>
     </div>
+    </form>
 </div>
 

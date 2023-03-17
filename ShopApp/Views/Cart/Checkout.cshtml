@@ -1,4 +1,4 @@
-﻿
+﻿@model ShopApp.WebUI.Models.OrderModel
 @{
     ViewData["Title"] = "Checkout";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -10,20 +10,21 @@
         </div>
         <div class="checkout__form">
             <h4>Fatura Detayları</h4>
-            <form action="#">
-                <div class="row">
-                    <div class="col-lg-8 col-md-6">
+
+            <div class="row">
+                <div class="col-lg-8 col-md-6">
+                    <form asp-controller="Cart" asp-action="Checkout" method="post">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="edit_input">
                                     <p>Adınız<span>*</span></p>
-                                    <input type="text" placeholder="Adınızı Giriniz..." class="edit_input__add">
+                                    <input type="text" asp-for="@Model.FirstName" placeholder="Adınızı Giriniz..." class="edit_input__add">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="edit_input">
                                     <p>Soyadınız<span>*</span></p>
-                                    <input type="text" placeholder="Soyadınızı Giriniz..." class="edit_input__add">
+                                    <input type="text" asp-for="@Model.LastName" placeholder="Soyadınızı Giriniz..." class="edit_input__add">
                                 </div>
                             </div>
                         </div>
@@ -31,13 +32,13 @@
                             <div class="col-6">
                                 <div class="edit_input">
                                     <p>E-posta<span>*</span></p>
-                                    <input type="text" placeholder="E-Postanızı Giriniz..." class="edit_input__add">
+                                    <input type="text" asp-for="@Model.Mail" placeholder="E-Postanızı Giriniz..." class="edit_input__add">
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="edit_input">
                                     <p>Telefon<span>*</span></p>
-                                    <input type="text" placeholder="Telefon Numarası Giriniz..." class="edit_input__add">
+                                    <input type="text" asp-for="@Model.Phone" placeholder="Telefon Numarası Giriniz..." class="edit_input__add">
                                 </div>
                             </div>
                         </div>
@@ -45,19 +46,19 @@
                             <div class="col-6">
                                 <div class="edit_input">
                                     <p>İl<span>*</span></p>
-                                    <input type="text" placeholder="Street Address" class="edit_input__add">
+                                    <input type="text" asp-for="@Model.City" placeholder="İl giriniz..." class="edit_input__add">
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="edit_input">
                                     <p>İlçe<span>*</span></p>
-                                    <input type="text" placeholder="Street Address" class="edit_input__add">
+                                    <input type="text"  placeholder="İlçe giriniz..." class="edit_input__add">
                                 </div>
                             </div>
                         </div>
                         <div class="edit_input">
                             <p>Adres<span>*</span></p>
-                            <input type="text" placeholder="Street Address" class="edit_input__add">
+                            <input type="text" asp-for="@Model.Address" placeholder="Teslimat adresi giriniz..." class="edit_input__add">
                         </div>
                         <div class="row">
                             <div class="col-12">
@@ -70,51 +71,60 @@
                                 <div class="col-6">
                                     <div class="edit_input">
                                         <p>Kart Numarası<span>*</span></p>
-                                        <input type="text" placeholder="Numara Giriniz..." class="edit_input__add">
+                                        <input type="text" asp-for="@Model.CardNumber" placeholder="Numara Giriniz..." class="edit_input__add">
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="edit_input">
                                         <p>Kart Üstündeki İsim<span>*</span></p>
-                                        <input type="text" placeholder="İsim Giriniz..." class="edit_input__add">
+                                        <input type="text" asp-for="@Model.CardName" placeholder="İsim Giriniz..." class="edit_input__add">
                                     </div>
                                 </div>
 
                                 <div class="row col-12">
-                                    <div class="col-6">
+                                    <div class="col-4">
                                         <div class="edit_input">
                                             <p>Kart Üzerindeki Tarih<span>*</span></p>
-                                            <input type="text" placeholder="Tarih Giriniz..." class="edit_input__add">
+                                            <input type="text" asp-for="@Model.ExpirationMonth" placeholder="Ay" class="edit_input__add">
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-4">
+                                        <div class="edit_input">
+                                            <p>Kart Üzerindeki Tarih<span>*</span></p>
+                                            <input type="text" asp-for="@Model.ExpirationYear" placeholder="Yıl" class="edit_input__add">
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
                                         <div class="edit_input">
                                             <p>CCV<span>*</span></p>
-                                            <input type="text" placeholder="CCV Numaranızı Giriniz..." class="edit_input__add">
+                                            <input type="text" asp-for="@Model.Cvv" placeholder="CCV" class="edit_input__add">
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="checkout__order">
-                            <h4>Sipariş Toplamı</h4>
-                            <div class="checkout__order__products">Sipariş<span>Fiyat</span></div>
-                            <ul>
-                                <li>Vegetable’s Package <span>$75.99</span></li>
-                                <li>Fresh Vegetable <span>$151.99</span></li>
-                                <li>Organic Bananas <span>$53.99</span></li>
-                            </ul>
-                            <div class="checkout__order__subtotal">Ara Toplam <span>$750.99</span></div>
-                            <div class="checkout__order__total">Toplam <span>$750.99</span></div>
+                        <button type="submit" class="site-btn">Tamamla</button>
+                    </form>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="checkout__order">
+                        <h4>Sipariş Toplamı</h4>
+                        <div class="checkout__order__products">Sipariş<span>Fiyat</span></div>
+                        <ul>
+                            @foreach (var item in Model.CartModel.CartItems)
+                            {
+                                <li>@item.Name<span>@item.Quantity x @item.Price</span><span></span></li>
+                            }
+                        </ul>
+                        <div class="checkout__order__subtotal">Ara Toplam <span>@Model.CartModel.TotalPrice() ₺</span></div>
+                        <div class="checkout__order__total">Toplam <span>@Model.CartModel.TotalPrice() ₺</span></div>
 
-                            <button type="submit" class="site-btn">Tamamla</button>
-                        </div>
+                
                     </div>
                 </div>
-            </form>
+            </div>
+
         </div>
     </div>
 </section>

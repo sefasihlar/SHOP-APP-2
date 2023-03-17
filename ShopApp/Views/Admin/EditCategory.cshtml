@@ -4,5 +4,80 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>EditCategory</h1>
+<div style="background-color:rgb(249, 249, 249);border-radius: 15px;padding: 3%;" class="container ">
+    <div class="row">
+        <div class="col-lg-6 ">
+            <div class="row">
+                <h4>
+                    <strong> Kategori Bilgileri </strong>
+                </h4><br>
+            </div>
+            <div style="margin-top: 15px;" class="row">
+                <div class="col-8">
+
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="order-edit">
+                                Kategori İsmi
+                            </span>
+                        </div>
+                        <div class="col-9">
+                            <input class="order-edit_input" type="text" placeholder="Kategori Adını Giriniz">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="order-edit">
+                                Kategori Durumu
+                            </span>
+                        </div>
+                        <div class="col-9">
+                            <select class="select" name="" id="">
+                                <option value="">Aktif</option>
+                                <option value="">Pasif</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <button id="save" class="primary-btn ">Kaydet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 ">
+            <div class="row">
+                <h4>
+                    <strong>Kategori Ürünleri</strong>
+                </h4>
+            </div>
+            <div class="tablo row">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Numarası</th>
+                            <th>Resim</th>
+                            <th>Adı</th>
+                            <th>Miktar</th>
+                            <th>Fiyat</th>
+                            <th>Durum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12412412</td>
+                            <td><img width="35px" src="../img/cart/cart-1.jpg" alt=""></td>
+                            <td>Tuz</td>
+                            <td>75 Kg</td>
+                            <td>15</td>
+                            <td>Aktif</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
 

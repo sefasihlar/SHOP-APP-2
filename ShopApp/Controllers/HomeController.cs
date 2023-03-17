@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ShopApp.Business.Concrete;
 using ShopApp.DataAccess.Concrete.EfCore;
 using ShopApp.Models;
@@ -6,7 +7,7 @@ using System.Diagnostics;
 
 namespace ShopApp.Controllers
 {
-
+	[Authorize]
 	public class HomeController : Controller
 	{
 		private readonly ILogger<HomeController> _logger;

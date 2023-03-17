@@ -1,12 +1,13 @@
-﻿<header class="header">
+﻿
+<header class="header">
     <div class="header__top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="header__top__left">
                         <ul>
-                            <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                            <li>Free Shipping for all Order of $99</li>
+                            <li><i class="fa fa-envelope"></i>info@mutlubaharat.com</li>
+                            <li> 100₺ ve üzeri kargo bedava</li>
                         </ul>
                     </div>
                 </div>
@@ -16,10 +17,29 @@
                             <a href="#"><i class="fa fa-instagram"></i></a>
 
                         </div>
+                    
 
-                        <div class="header__top__right__auth">
-                            <a href="./login.html"><i class="fa fa-user"></i> Login</a>
-                        </div>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <div class="header__top__right__auth">
+                                <a asp-controller="Account" asp-action="Register"><i class="fa fa-user"></i>Hesabım  </a>
+                            </div>
+
+                            <div class="header__top__right__auth">
+                                <a asp-controller="Account" asp-action="Logout"><i class="fa fa-sign-out"></i> Çıkış</a>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="header__top__right__auth">
+                                <a asp-controller="Account" asp-action="Register"><i class="fa fa-user"></i>Kayıt Ol</a>
+                            </div>
+
+                            <div class="header__top__right__auth">
+                                <a asp-controller="Account" asp-action="Login"><i class="fa fa-user"></i> Giriş</a>
+                            </div>
+                        }
+                   
                     </div>
                 </div>
             </div>
@@ -35,18 +55,35 @@
             <div class="col-lg-6">
                 <nav class="header__menu">
                     <ul>
-                        <li class="active"><a href="./index.html">Anasayfa</a></li>
-                        <li><a href="./shop-grid.html">Alışveriş</a></li>
+                        <li class="active"><a asp-controller="Home" asp-action="Index">Anasayfa</a></li>
+
+                        <li><a asp-controller="Shop" asp-action="AllList">Alışveriş</a></li>
                         <li><a href="./contact.html">İletişim</a></li>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li><a asp-controller="Admin" asp-action="Index">Admin</a></li>
+                        }
+               
+                 
                     </ul>
                 </nav>
             </div>
             <div class="col-lg-3">
                 <div class="header__cart">
-                    <ul>
-                        <li><a href="./shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-                    </ul>
-                    <div class="header__cart__price">Toplam: <span>$150.00</span></div>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <ul>
+                            @await Component.InvokeAsync("TotalBag")
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <li>
+                                    @User.Identity.Name
+                                </li>
+                            }
+                      
+                        </ul>
+                    }
+                 
                 </div>
             </div>
         </div>

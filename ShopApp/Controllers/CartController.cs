@@ -49,7 +49,7 @@ namespace ShopApp.WebUI.Controllers
 		public IActionResult AddToCart(int productId, int quantity)
 		{
 			var userId = _userManager.GetUserId(User);
-			_cartManager.AddToCart("1", productId, quantity);
+			_cartManager.AddToCart(userId, productId, quantity);
 			TempData.Put("Message", new ResultMessage()
 			{
 				Title = "Başarılı",
@@ -132,7 +132,7 @@ namespace ShopApp.WebUI.Controllers
 					Css = "success"
 				});
 				ClearCart(cart.Id.ToString());
-				return View("Success");
+				return RedirectToAction("Index","Home");
 			}
 
 

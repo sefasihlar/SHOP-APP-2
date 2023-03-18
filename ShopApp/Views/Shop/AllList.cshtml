@@ -23,70 +23,11 @@
         <div class="row">
             <div class="col-lg-3 col-md-5">
                 <div class="sidebar">
-                  @await Component.InvokeAsync("CategoryList")
+                    @await Component.InvokeAsync("CategoryList")
                     <div class="sidebar__item">
                         <div class="latest-product__text">
-                            <h4>Son Eklenenler</h4>
-                            <div class="latest-product__slider owl-carousel">
-                                <div class="latest-prdouct__slider__item">
-                                    <a href="#" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="/Theme/img/latest-product/lp-1.jpg" alt="">
-                                        </div>
-                                        <div class="latest-product__item__text">
-                                            <h6>Crab Pool Security</h6>
-                                            <span>$30.00</span>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="/Theme/img/latest-product/lp-2.jpg" alt="">
-                                        </div>
-                                        <div class="latest-product__item__text">
-                                            <h6>Crab Pool Security</h6>
-                                            <span>$30.00</span>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="/Theme/img/latest-product/lp-3.jpg" alt="">
-                                        </div>
-                                        <div class="latest-product__item__text">
-                                            <h6>Crab Pool Security</h6>
-                                            <span>$30.00</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="latest-prdouct__slider__item">
-                                    <a href="#" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="/Theme/img/latest-product/lp-1.jpg" alt="">
-                                        </div>
-                                        <div class="latest-product__item__text">
-                                            <h6>Crab Pool Security</h6>
-                                            <span>$30.00</span>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="/Theme/img/latest-product/lp-2.jpg" alt="">
-                                        </div>
-                                        <div class="latest-product__item__text">
-                                            <h6>Crab Pool Security</h6>
-                                            <span>$30.00</span>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="latest-product__item">
-                                        <div class="latest-product__item__pic">
-                                            <img src="/Theme/img/latest-product/lp-3.jpg" alt="">
-                                        </div>
-                                        <div class="latest-product__item__text">
-                                            <h6>Crab Pool Security</h6>
-                                            <span>$30.00</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                            <h4>Son Eklenen   </h4>
+                            @await Component.InvokeAsync("GetLastAddShop")
                         </div>
                     </div>
                 </div>
@@ -96,82 +37,7 @@
                     <div class="section-title product__discount__title">
                         <h2>Gözde Ürünlerimiz</h2>
                     </div>
-                    <div class="row">
-                        <div class="product__discount__slider owl-carousel">
-                            <div class="col-lg-4">
-                                <div class="product__discount__item">
-                                    <div class="product__discount__item__pic set-bg"
-                                         data-setbg="/Theme/img/product/discount/pd-1.jpg">
-                                    </div>
-                                    <div class="product__discount__item__text">
-                                        <span>Dried Fruit</span>
-                                        <h5><a href="#">Raisin’n’nuts</a></h5>
-                                        <div class="product__item__price">$30.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="product__discount__item">
-                                    <div class="product__discount__item__pic set-bg"
-                                         data-setbg="/Theme/img/product/discount/pd-2.jpg">
-                                    </div>
-                                    <div class="product__discount__item__text">
-                                        <span>Vegetables</span>
-                                        <h5><a href="#">Vegetables’package</a></h5>
-                                        <div class="product__item__price">$30.00 </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="product__discount__item">
-                                    <div class="product__discount__item__pic set-bg"
-                                         data-setbg="/Theme/img/product/discount/pd-3.jpg">
-                                    </div>
-                                    <div class="product__discount__item__text">
-                                        <span>Dried Fruit</span>
-                                        <h5><a href="#">Mixed Fruitss</a></h5>
-                                        <div class="product__item__price">$30.00 </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="product__discount__item">
-                                    <div class="product__discount__item__pic set-bg"
-                                         data-setbg="/Theme/img/product/discount/pd-4.jpg">
-                                    </div>
-                                    <div class="product__discount__item__text">
-                                        <span>Dried Fruit</span>
-                                        <h5><a href="#">Raisin’n’nuts</a></h5>
-                                        <div class="product__item__price">$30.00 </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="product__discount__item">
-                                    <div class="product__discount__item__pic set-bg"
-                                         data-setbg="/Theme/img/product/discount/pd-5.jpg">
-                                    </div>
-                                    <div class="product__discount__item__text">
-                                        <span>Dried Fruit</span>
-                                        <h5><a href="#">Raisin’n’nuts</a></h5>
-                                        <div class="product__item__price">$30.00 </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="product__discount__item">
-                                    <div class="product__discount__item__pic set-bg"
-                                         data-setbg="/Theme/img/product/discount/pd-6.jpg">
-                                    </div>
-                                    <div class="product__discount__item__text">
-                                        <span>Dried Fruit</span>
-                                        <h5><a href="#">Raisin’n’nuts</a></h5>
-                                        <div class="product__item__price">$30.00 </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @await Component.InvokeAsync("GetPopularTrendShop")
                 </div>
                 <div class="filter__item">
                     <div class="row">
@@ -179,7 +45,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4">
                             <div class="filter__found">
-                                <h6><span>16</span> Ürün Bulundu</h6>
+                                <h6><span>@Model.Products.Count()</span> Ürün Bulundu</h6>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-3">
@@ -203,13 +69,12 @@
                             </div>
                         </div>
                     }
-                   
+
                 </div>
-                <div class="product__pagination">
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#"><i class="fa fa-long-arrow-right"></i></a>
+                <div class="col-lg-12 text-center">
+                    <div class="product__pagination">
+                        <div page-model="@Model.PageInfo"></div>
+                    </div>
                 </div>
             </div>
         </div>

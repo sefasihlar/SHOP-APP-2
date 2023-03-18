@@ -8,9 +8,9 @@
     @await Html.PartialAsync("PartialHome/Categories")
     <!-- Categories Section End -->
     <!--  Product promotion Begin -->
-    @await Html.PartialAsync("PartialHome/Products")
+    @await Component.InvokeAsync("GetPopularProduct")
     <!-- Product promotion End -->
     <!-- Bestsellers and Recently Added Tables Begin -->
     <!-- Bestsellers and Recently Added Tables End -->
-    @await Html.PartialAsync("PartialHome/Trend")
+    @await Component.InvokeAsync("GetLastAddProduct")
 

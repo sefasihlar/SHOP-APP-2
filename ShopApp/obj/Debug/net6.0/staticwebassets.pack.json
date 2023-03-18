@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets\\Theme\\contact.html"
     },
     {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\css\\AccessDenied.css",
+      "PackagePath": "staticwebassets\\Theme\\css\\AccessDenied.css"
+    },
+    {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\Theme\\css\\bootstrap.min.css"
     },
@@ -321,6 +325,18 @@
       "PackagePath": "staticwebassets\\Theme\\img\\product\\o5kfzzzpax0.png"
     },
     {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\pd-1.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\pd-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\pd-3.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\pd-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\pd-6.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\pd-6.jpg"
+    },
+    {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\product-1.jpg",
       "PackagePath": "staticwebassets\\Theme\\img\\product\\product-1.jpg"
     },
@@ -369,8 +385,20 @@
       "PackagePath": "staticwebassets\\Theme\\img\\product\\product-9.jpg"
     },
     {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\product-details-1.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\product-details-1.jpg"
+    },
+    {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\rrdx3twvcbr.png",
       "PackagePath": "staticwebassets\\Theme\\img\\product\\rrdx3twvcbr.png"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\thumb-3.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\thumb-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\thumb-4.jpg",
+      "PackagePath": "staticwebassets\\Theme\\img\\product\\thumb-4.jpg"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\img\\product\\uxqzv5e21oo.png",
@@ -383,6 +411,10 @@
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\index.html",
       "PackagePath": "staticwebassets\\Theme\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\js\\AccessDenied.js",
+      "PackagePath": "staticwebassets\\Theme\\js\\AccessDenied.js"
     },
     {
       "Id": "C:\\Users\\sihla\\Masaüstü\\MetaAkdeniz\\MutluBaharat\\ShopApp\\wwwroot\\Theme\\js\\bootstrap.min.js",

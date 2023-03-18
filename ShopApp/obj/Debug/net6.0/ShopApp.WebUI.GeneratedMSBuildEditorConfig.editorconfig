@@ -96,6 +96,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxPcmRlckRldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Error/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcQWNjZXNzRGVuaWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Home/GelAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZWxBbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -108,8 +116,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Role/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Shared/Components/CategoryList/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcnlMaXN0XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Shared/Components/GetLastAddProduct/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcR2V0TGFzdEFkZFByb2R1Y3RcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Shared/Components/GetLastAddShop/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcR2V0TGFzdEFkZFNob3BcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Shared/Components/GetPopularProduct/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcR2V0UG9wdWxhclByb2R1Y3RcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Shared/Components/GetPopularTrendProduct/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcR2V0UG9wdWxhclRyZW5kUHJvZHVjdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Shared/Components/GetPopularTrendShop/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcR2V0UG9wdWxhclRyZW5kU2hvcFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Shared/Components/RelatedProduct/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUmVsYXRlZFByb2R1Y3RcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sihla/Masaüstü/MetaAkdeniz/MutluBaharat/ShopApp/Views/Shared/Components/TotalBag/Default.cshtml]

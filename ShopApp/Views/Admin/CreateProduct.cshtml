@@ -29,6 +29,16 @@
                                 <input asp-for="Name" value="@Model.Name" class="order-edit_input" type="text" placeholder="Ürün Adını Giriniz">
                         </div>
                     </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <span class="order-edit">
+                                    Ürün Detayları
+                                </span>
+                            </div>
+                            <div class="col-9">
+                                <textarea style="height:70px ;" asp-for="Description" value="@Model.Description" class="order-edit_input  m-1" placeholder="Ürün Bilgilerini Giriniz"> </textarea>
+                            </div>
+                        </div>
                     <div class="row">
                         <div class="col-3">
                             <span class="order-edit">

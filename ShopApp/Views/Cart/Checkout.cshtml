@@ -60,50 +60,54 @@
                             <p>Adres<span>*</span></p>
                             <input type="text" asp-for="@Model.Address" placeholder="Teslimat adresi giriniz..." class="edit_input__add">
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <h4>
-                                    Ödeme Bilgileri
-                                </h4>
-                            </div>
-
-                            <div class="row col-12">
-                                <div class="col-6">
-                                    <div class="edit_input">
-                                        <p>Kart Numarası<span>*</span></p>
-                                        <input type="text" asp-for="@Model.CardNumber" placeholder="Numara Giriniz..." class="edit_input__add">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="edit_input">
-                                        <p>Kart Üstündeki İsim<span>*</span></p>
-                                        <input type="text" asp-for="@Model.CardName" placeholder="İsim Giriniz..." class="edit_input__add">
-                                    </div>
+                        @if (User.IsInRole("User") == true)
+                        {
+                            <div class="row">
+                                <div class="col-12">
+                                    <h4>
+                                        Ödeme Bilgileri
+                                    </h4>
                                 </div>
 
                                 <div class="row col-12">
-                                    <div class="col-4">
+                                    <div class="col-6">
                                         <div class="edit_input">
-                                            <p>Kart Üzerindeki Tarih<span>*</span></p>
-                                            <input type="text" asp-for="@Model.ExpirationMonth" placeholder="Ay" class="edit_input__add">
+                                            <p>Kart Numarası<span>*</span></p>
+                                            <input type="text" asp-for="@Model.CardNumber" placeholder="Numara Giriniz..." class="edit_input__add">
                                         </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-6">
                                         <div class="edit_input">
-                                            <p>Kart Üzerindeki Tarih<span>*</span></p>
-                                            <input type="text" asp-for="@Model.ExpirationYear" placeholder="Yıl" class="edit_input__add">
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="edit_input">
-                                            <p>CCV<span>*</span></p>
-                                            <input type="text" asp-for="@Model.Cvv" placeholder="CCV" class="edit_input__add">
+                                            <p>Kart Üstündeki İsim<span>*</span></p>
+                                            <input type="text" asp-for="@Model.CardName" placeholder="İsim Giriniz..." class="edit_input__add">
                                         </div>
                                     </div>
 
+                                    <div class="row col-12">
+                                        <div class="col-4">
+                                            <div class="edit_input">
+                                                <p>Kart Üzerindeki Tarih<span>*</span></p>
+                                                <input type="text" asp-for="@Model.ExpirationMonth" placeholder="Ay" class="edit_input__add">
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="edit_input">
+                                                <p>Kart Üzerindeki Tarih<span>*</span></p>
+                                                <input type="text" asp-for="@Model.ExpirationYear" placeholder="Yıl" class="edit_input__add">
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="edit_input">
+                                                <p>CCV<span>*</span></p>
+                                                <input type="text" asp-for="@Model.Cvv" placeholder="CCV" class="edit_input__add">
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        }
+                   
                         <button type="submit" class="site-btn">Tamamla</button>
                     </form>
                 </div>

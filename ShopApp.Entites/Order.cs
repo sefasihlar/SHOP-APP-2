@@ -8,7 +8,7 @@
         }
         public int Id { get; set; }
         public string OrderNumber { get; set; }
-        public DateTime OrderTime { get; set; }
+        public DateTime OrderTime { get; set; }= DateTime.Now;
 
         public AppUser User { get; set; }
         public int UserId { get; set; }

@@ -8,6 +8,7 @@ namespace ShopApp.DataAccess.Abstract
         Product GetByIdWithCategories(int id);
         int GetCountByCategory(string category);
         IEnumerable<Product> GetPopularProduct();
+        IEnumerable<Product> GetLastAddProduct();
         List<Product> GetProductsByCategory(string category, int page, int pageSize);
         void Update(Product entity, int[] categoryIds);
     }

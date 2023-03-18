@@ -48,6 +48,16 @@ namespace ShopApp.Business.Concrete
             return _productDal.GetCountByCategory(category);
         }
 
+        public IEnumerable<Product> GetLastAddProduct()
+        {
+            return _productDal.GetLastAddProduct().ToList();
+        }
+
+        public IEnumerable<Product> GetPopularProduct()
+        {
+            return _productDal.GetPopularProduct().ToList();
+        }
+
         public List<Product> GetProductsByCategory(string category, int page, int pageSize)
         {
             return _productDal.GetProductsByCategory(category, page, pageSize);

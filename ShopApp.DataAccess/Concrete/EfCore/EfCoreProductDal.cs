@@ -67,9 +67,28 @@ namespace ShopApp.DataAccess.Concrete.EfCore
             };
         }
 
+        public IEnumerable<Product> GetLastAddProduct()
+        {
+            using (var _context = new ShopContext())
+            {
+                return _context.Products
+                    .OrderByDescending(x => x.Id) // Id sütununa göre azalan sırayla sırala
+                    .Take(9) // Son 9 öğeyi seç
+                    .ToList(); // List olarak döndür
+            }
+        }
+
         public IEnumerable<Product> GetPopularProduct()
         {
-            throw new NotImplementedException();
+            using (var _context = new ShopContext())
+            {
+                return _context.Products
+                    .Include(x => x.ProductCategories)
+                    .ThenInclude(x => x.Category)
+                    .Where(x => x.Price > 30)
+                    .Take(6) // ilk 6 ürünü seçer
+                    .ToList(); // fiyatı 30 dan büyük ilk 6 ürün getirlir.Güncellenecek
+            }
         }
         //Kategoriye göre filtereleme işlemi
         public List<Product> GetProductsByCategory(string category, int page, int pageSize)
@@ -108,6 +127,7 @@ namespace ShopApp.DataAccess.Concrete.EfCore
                     product.Price = entity.Price;
                     product.Gender = entity.Gender;
                     product.Condition = entity.Condition;
+                    product.Description = entity.Description;
 
                     product.ProductCategories = categoryIds.Select(x => new ProductCategory()
                     {

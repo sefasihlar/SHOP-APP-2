@@ -35,15 +35,16 @@
                                         <p class="fw-normal mb-1">@item.Name</p>
                                     </td>
                                     <td>
-                                        <a href="/Admin/CategoryEdit/@item.Id" class="btn btn-link badge-primary btn-pill btn-sm fw-bold"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                                        <form action="/admin/DeleteCategory/" method="post" style="display:inline">
+                                        <a href="/Admin/CategoryEdit/@item.Id" class="btn btn-link badge-primary btn-pill btn-sm fw-bold">
+                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                        </a>
+                                        <form asp-controller="Admin" asp-action="DeleteCategory" method="post" style="display:inline" id="myForm_@item.Id">
                                             <input type="hidden" name="id" value="@item.Id" />
-                                            <button type="submit" style="color:white;text-decoration:none"
-                                                    class="btn btn-link badge-danger btn-pill btn-sm fw-bold">
-                                                <i class="fa fa-trash-o" aria-hidden="true"></i>  Sil
+                                            <button style="color:white;text-decoration:none" onclick="myFunction(event, @item.Id)" class="btn btn-link badge-danger btn-pill btn-sm fw-bold">
+                                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                Sil
                                             </button>
                                         </form>
-
                                     </td>
                                 </tr>
                             }

@@ -121,28 +121,50 @@ namespace ShopApp.WebUI.Controllers
 
             var payment = PaymentRrocess(model);
 
-            if (payment.Status == "success")
+            if (User.IsInRole("User") == true)
             {
-                SaveOrder(model, payment, userId);
-                TempData.Put("Message", new ResultMessage()
+                if (payment.Status == "success")
                 {
-                    Title = "Başarılı",
-                    Message = "Siparişiniz başarıyla alındı.Durumu sipariş durumunuzu siparişlerim kısmında görüntüleyebilirsiniz",
-                    Css = "success"
-                });
-                ClearCart(cart.Id.ToString());
-                return RedirectToAction("Index", "Home");
+                    SaveOrder(model, payment, userId);
+                    TempData.Put("Message", new ResultMessage()
+                    {
+                        Title = "Başarılı",
+                        Message = "Siparişiniz başarıyla alındı.Durumu sipariş durumunuzu siparişlerim kısmında görüntüleyebilirsiniz",
+                        Css = "success"
+                    });
+                    ClearCart(cart.Id.ToString());
+                    return RedirectToAction("Index", "Home");
+                }
+
+                else
+                {
+                    TempData.Put("Message", new ResultMessage()
+                    {
+                        Title = "Opps! Hata",
+                        Message = "Birşeyler ters gitti.Lütefen bilgilerinizi kontrol ederek tekarar deneyiniz",
+                        Css = "error"
+                    });
+                    return View(model);
+                }
             }
 
-
-
-            TempData.Put("Message", new ResultMessage()
+            if (User.IsInRole("Seller") == true)
             {
-                Title = "Opps! Hata",
-                Message = "Birşeyler ters gitti.Lütefen bilgilerinizi kontrol ederek tekarar deneyiniz",
-                Css = "error"
-            });
-            return View(model);
+                //kullanıcının rolune bağlı  da tutulabilir
+                if (model.CardNumber == null & model.Cvv == null & model.CardName == null & model.ExpirationYear == null)
+                {
+                    SaveOrder(model, payment, userId);
+                    TempData.Put("Message", new ResultMessage()
+                    {
+                        Title = "Bayi Siparişi Başarılı",
+                        Message = "Siparişiniz başarıyla alındı.Durumu sipariş durumunuzu siparişlerim kısmında görüntüleyebilirsiniz",
+                        Css = "success"
+                    });
+                    ClearCart(cart.Id.ToString());
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+           return RedirectToAction("Index","Home");
         }
 
         private void SaveOrder(OrderModel model, Payment payment, string userId)

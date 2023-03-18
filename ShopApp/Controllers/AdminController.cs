@@ -1,15 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using ShopApp.Business.Concrete;
 using ShopApp.DataAccess.Concrete.EfCore;
 using ShopApp.Entites;
 using ShopApp.WebUI.Extensions;
 using ShopApp.WebUI.Models;
+using System.Data;
 
 namespace ShopApp.WebUI.Controllers
 {
-
-    public class AdminController : Controller
+	[Authorize(Roles = "Admin")]
+	public class AdminController : Controller
     {
         ProductManager ip = new ProductManager(new EfCoreProductDal());
         CategoryManager _category = new CategoryManager(new EfCoreCategoryDal());
@@ -98,7 +100,7 @@ namespace ShopApp.WebUI.Controllers
                     Message = "Ürün Ekleme işlemi başarılı",
                     Css = "success"
                 });
-                return RedirectToAction("Index", "Admin");
+                return RedirectToAction("ProductList", "Admin");
             }
 
 
@@ -343,7 +345,7 @@ namespace ShopApp.WebUI.Controllers
             TempData.Put("Message", new ResultMessage()
             {
                 Title = "Başarılı",
-                Message = "İlişki silme işlemi başarılı bir şekilde gerçekleşti ürün tamamen değil sadece bu categoriden silildi!! :)",
+                Message = "İlişki silme işlemi başarılı bir şekilde gerçekleşti.Ürün tamamen değil sadece bu categoriden silindi",
                 Css = "success"
             });
             return RedirectToAction("CategoryList","Admin");

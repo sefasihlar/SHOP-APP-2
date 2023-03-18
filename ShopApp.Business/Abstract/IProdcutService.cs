@@ -14,6 +14,10 @@ namespace ShopApp.Business.Abstract
         List<Product> GetALl();
         List<Product> GetProductsByCategory(String category, int page, int pageSize);
 
+        IEnumerable<Product> GetPopularProduct();
+        IEnumerable<Product> GetLastAddProduct();
+
+
         int GetCountByCategory(string category);
 
     }

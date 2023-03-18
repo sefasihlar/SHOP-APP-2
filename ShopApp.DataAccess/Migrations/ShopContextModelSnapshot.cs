@@ -99,17 +99,11 @@ namespace ShopApp.DataAccess.Migrations
                     b.Property<int>("RoleId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("UserId", "RoleId");
 
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUserRole<int>");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<int>", b =>
@@ -431,18 +425,6 @@ namespace ShopApp.DataAccess.Migrations
                     b.ToTable("ProductCategory");
                 });
 
-            modelBuilder.Entity("ShopApp.Entites.RoleUser", b =>
-                {
-                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUserRole<int>");
-
-                    b.Property<int?>("AppRoleId")
-                        .HasColumnType("int");
-
-                    b.HasIndex("AppRoleId");
-
-                    b.HasDiscriminator().HasValue("RoleUser");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
                 {
                     b.HasOne("ShopApp.Entites.AppRole", null)
@@ -560,18 +542,6 @@ namespace ShopApp.DataAccess.Migrations
                     b.Navigation("Category");
 
                     b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("ShopApp.Entites.RoleUser", b =>
-                {
-                    b.HasOne("ShopApp.Entites.AppRole", null)
-                        .WithMany("Users")
-                        .HasForeignKey("AppRoleId");
-                });
-
-            modelBuilder.Entity("ShopApp.Entites.AppRole", b =>
-                {
-                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("ShopApp.Entites.Cart", b =>

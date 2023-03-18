@@ -27,10 +27,10 @@
                             </div>
                         </div>
 
-                    <div class="row ">
-                        <button id="save" class="primary-btn ">Kaydet</button>
-                    </div>
-                     </form>
+                        <div class="row ">
+                            <button id="save" class="primary-btn ">Kaydet</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -54,37 +54,37 @@
                     <tbody>
                         @foreach (var item in Model.Products)
                         {
-                                <tr>
-                                    <td>@item.Id</td>
-                                    <td>
-                                        <div class="d-flex align-items-center">
-                                            <img src="/Theme/img/product/@item.ImageUrl"
-                                                 alt=""
-                                                 style="width: 45px; height: 45px"
-                                                 class="rounded-circle" />
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <p class="fw-normal mb-1">@item.Name</p>
-                                    </td>
-                                    <td>
-                                        <p class="fw-normal mb-1">@item.Price</p>
-                                    </td>
-                                    <td>@item.Gender</td>
-                                    <td></td>
-                                         <td>
-                                            <a href="/admin/products/@item.Id" class="btn btn-link badge-primary btn-pill btn-sm fw-bold">EDIT</a>
-                                            <form action="/admin/deletefromcategory/" method="post" style="display:inline">
-                                                <input type="hidden" name="id" value="@item.Id" />
-                                                <input type="hidden" name="categoryid" value="@Model.Id" />
-                                                <button type="submit" style="color:white;text-decoration:none"
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="/Theme/img/product/@item.ImageUrl"
+                                             alt=""
+                                             style="width: 45px; height: 45px"
+                                             class="rounded-circle" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="fw-normal mb-1">@item.Name</p>
+                                </td>
+                                <td>
+                                    <p class="fw-normal mb-1">@item.Price</p>
+                                </td>
+                                <td>@item.Gender</td>
+                                <td></td>
+                                <td>
+                                    <a href="/admin/products/@item.Id" class="btn btn-link badge-primary btn-pill btn-sm fw-bold">EDIT</a>
+                                    <form action="/admin/deletefromcategory/" method="post" style="display:inline" id="myForm_@item.Id">
+                                        <input type="hidden" name="id" value="@item.Id" />
+                                        <input type="hidden" name="categoryid" value="@Model.Id" />
+                                        <button type="submit" style="color:white;text-decoration:none"
+                                                onclick="myFunction(event, @item.Id)"
                                                 class="btn btn-link badge-danger btn-pill btn-sm fw-bold">
-                                                    DELETE
-                                                </button>
-                                            </form>
-
-                                        </td>
-                                </tr>
+                                            DELETE
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
                         }
 
                     </tbody>

@@ -22,7 +22,9 @@ h6 {
 a {
 	cursor: pointer;
 }
-
+.swal2-select {
+	display: none !important;
+}
 h1 {
 	font-size: 70px;
 }

@@ -32,63 +32,58 @@ namespace ShopApp.Controllers
             var productsfilters = new ProductModel()
             {
                 Products = ip.GetALl().Where(x => x.ProductCategories.Any(x => x.Category.Name == "Ana Sayfa Slider")).ToList()
-            }
+            };
 
             return View(productsfilters);
         }
+
+        public IActionResult Mans()
+        {
+            var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
+            return View(values);
+        }
+        public IActionResult Kids()
+        {
+            var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
+            return View(values);
+        }
+        public IActionResult Accessories()
+        {
+            var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
+            return View(values);
+        }
+        public IActionResult Cosmatics()
+        {
+            var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
+            return View(values);
+        }
+
+        //galeri kısmı --finish
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult GelAll()
+        {
+
+            var values = ip.GetALl();
+            return View(values);
+
+        }
+
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+
     }
-
-
-
-}
-
-    public IActionResult Mans()
-    {
-        var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
-        return View(values);
-    }
-    public IActionResult Kids()
-    {
-        var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
-        return View(values);
-    }
-    public IActionResult Accessories()
-    {
-        var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
-        return View(values);
-    }
-    public IActionResult Cosmatics()
-    {
-        var values = ip.GetALl().Where(x => x.Price >= 100 & x.Condition == "True").ToList();
-        return View(values);
-    }
-
-    //galeri kısmı --finish
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
-
-    public IActionResult GelAll()
-    {
-
-        var values = ip.GetALl();
-        return View(values);
-
-    }
-
-    public IActionResult dneme()
-    {
-        return View();
-    }
-
-
-}
 }

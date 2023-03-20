@@ -15,8 +15,8 @@ RoleManager<AppUser> userManager;
 //start Authorization
 builder.Services.ConfigureApplicationCookie(o =>
 {
-	o.AccessDeniedPath = new PathString("/Error/AccessDenied");
-	o.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+    o.AccessDeniedPath = new PathString("/Error/AccessDenied");
+    o.ExpireTimeSpan = TimeSpan.FromMinutes(20);
     o.SlidingExpiration = true;
 });
 
@@ -34,9 +34,9 @@ builder.Services.AddAuthentication(
             Name = "Mutlu.Baharat",
             SameSite = SameSiteMode.Strict
         };
-	
 
-	});
+
+    });
 
 
 builder.Services.Configure<IdentityOptions>(options =>

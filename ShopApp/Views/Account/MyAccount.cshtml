@@ -1,0 +1,60 @@
+﻿@model ShopApp.WebUI.Models.AppUserModel
+@{
+    ViewData["Title"] = "MyAccount";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+    </div>
+    <div class="checkout__form">
+        <div class="text-center"><h4><strong>Kullanıcı Bilgileri</strong></h4></div>
+        <form asp-controller="Account" asp-action="MyAccount" method="post">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="edit_input">
+                                <p>Ad-Soyad<span></span></p>
+                                <input type="text" value="@Model.FullName" asp-for="@Model.FullName" class="edit_input__add">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="edit_input">
+                                <p>Kullanıcı Adı<span></span></p>
+                                <input type="text" value="@Model.UserName" asp-for="@Model.UserName" class="edit_input__add">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="edit_input">
+                                <p>E-posta<span></span></p>
+                                <input type="text" value="@Model.Email" asp-for="@Model.Email" class="edit_input__add">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="edit_input">
+                                <p>Telefon<span></span></p>
+                                <input type="text" value="@Model.PhoneNumber" asp-for="@Model.PhoneNumber" class="edit_input__add">
+                            </div>
+
+                        </div><br />
+                        @if (Model.SellerNumber != null)
+                        {
+
+                            <div class="col-lg-6">
+                                <div class="edit_input">
+                                    <p>Bayi Id<span></span></p>
+                                    <input type="text" value="@Model.SellerNumber" asp-for="@Model.SellerNumber" class="edit_input__add">
+                                </div>
+                            </div>
+
+                        }
+
+                    </div>
+                </div>
+                <button id="save" type="submit" class="site-btn fadeIn third text-center">Kaydet</button>
+        </form>
+    </div>
+</div>
+

@@ -85,8 +85,8 @@ namespace ShopApp.DataAccess.Concrete.EfCore
                 return _context.Products
                     .Include(x => x.ProductCategories)
                     .ThenInclude(x => x.Category)
-                    .Where(x => x.Price > 30)
-                    .Take(6) // ilk 6 ürünü seçer
+                    .Where(x => x.Price > 200)
+                    .Take(8) // ilk 6 ürünü seçer
                     .ToList(); // fiyatı 30 dan büyük ilk 6 ürün getirlir.Güncellenecek
             }
         }

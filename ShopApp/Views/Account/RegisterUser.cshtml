@@ -1,4 +1,5 @@
-﻿@model ShopApp.WebUI.Models.RegisterModel
+﻿@using ShopApp.WebUI.Models;
+@model ShopApp.WebUI.Models.RegisterModel
 @{
     ViewData["Title"] = "RegisterUser";
     Layout = null;
@@ -19,7 +20,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mutlu Baharat</title>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 
@@ -160,23 +163,27 @@
                 <div class="row">
                     <div class="col-6 ">
 
-                        <input type="text" id="login" class="fadeIn second" asp-for="@Model.FullName" placeholder="Ad-Soyad...">
+                        <input type="text" id="login" class="fadeIn second" asp-for="@Model.FullName" placeholder="Ad-Soyad..."><br />
                              <span asp-validation-for="FullName" class="text-danger"></span>
-                        <input type="text" class="fadeIn third" asp-for="@Model.UserName" placeholder="Kullanıcı Adınız...">
+                        <input type="text" class="fadeIn third" asp-for="@Model.UserName" placeholder="Kullanıcı Adınız..."><br />
                            <span asp-validation-for="UserName" class="text-danger"></span>
                         <input type="text" class="fadeIn third" asp-for="@Model.Phone" placeholder="Telefon Numaranız...">
                     </div>
                     <div class="col-6">
-                        <input type="text" class="fadeIn third" asp-for="Email" placeholder="E-Posta Adresiniz...">
+                        <input type="text" class="fadeIn third" asp-for="Email" placeholder="E-Posta Adresiniz..."><br />
                              <span asp-validation-for="Email" class="text-danger"></span>
-                        <input type="text" id="password" class="fadeIn third" asp-for="@Model.Password" placeholder="Şifreniz...">
+                        <input type="text" id="password" class="fadeIn third" asp-for="@Model.Password" placeholder="Şifreniz..."><br />
                                <span asp-validation-for="Password" class="text-danger"></span>
-                        <input type="text" id="password" class="fadeIn third" asp-for="@Model.RePassword"placeholder="Şifre Tekrar...">
-                               <span asp-validation-for="Password" class="text-danger"></span>
+                        <input type="text" id="password" class="fadeIn third" asp-for="@Model.RePassword" placeholder="Şifre Tekrar..."><br />
+                        <span asp-validation-for="RePassword" class="text-danger"></span><br />
                     </div>
                 </div>
                 <input type="submit" class="fadeIn fourth" value="Kayıt Ol">
             </form>
+            @if (TempData["message"] != null)
+            {
+                <partial name="_resultMessage" model="@(TempData.Get<ResultMessage>("Message"))" />
+            }
         </div>
     </div>
     <!-- Footer Section Begin -->
@@ -237,6 +244,7 @@
     </footer>
     <!-- Footer Section End -->
     <!-- Js Plugins -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="/Theme/js/jquery-3.3.1.min.js"></script>
     <script src="/Theme/js/bootstrap.min.js"></script>
     <script src="/Theme/js/jquery.nice-select.min.js"></script>
@@ -245,6 +253,8 @@
     <script src="/Theme/js/mixitup.min.js"></script>
     <script src="/Theme/js/owl.carousel.min.js"></script>
     <script src="/Theme/js/main.js"></script>
+    <script src="~/jquery/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jquery/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 
 
 

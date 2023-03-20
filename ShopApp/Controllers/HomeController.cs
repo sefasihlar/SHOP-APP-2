@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShopApp.Business.Concrete;
 using ShopApp.DataAccess.Concrete.EfCore;
-using ShopApp.Entites;
 using ShopApp.Models;
 using ShopApp.WebUI.Models;
 using System.Diagnostics;

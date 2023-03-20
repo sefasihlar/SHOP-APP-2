@@ -1,8 +1,31 @@
-﻿
+﻿@using ShopApp.Entites
+@model Order
 @{
-    ViewData["Title"] = "OrderDetails";
+    ViewData["Title"] = "GetOrders";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<br />
+<h3 class="text-center">Sipariş Detayı</h3>
+<br />
+<hr />
+<div class="container">
+    <br />
+    <p>Sipariş Numarası:#@Model.Id</p>
+    <table class="table align-middle mb-0 bg-white table-bordered">
+        <tbody>
+            <tr> 
+                <td ><strong>Ad-Soyad:    </strong>  @Model.FistName @Model.LastName </td>
 
-<h1>OrderDetails</h1>
+                <td ><strong>Adres:</strong>  @Model.Address</td>
 
+                <td ><strong>Telefon:</strong> @Model.Phone</td>
+            </tr>
+            <tr>
+                <td><strong>Ödeme:</strong>@Model.EnumPaymentTypes</td>
+                <td><strong>Sipariş Durumu:</strong>@Model.Condition</td>
+                <td><strong>Sipariş Tarihi:</strong> @Model.OrderTime</td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+</div>

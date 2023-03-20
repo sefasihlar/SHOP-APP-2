@@ -15,6 +15,7 @@
                 <div class="col-lg-8 col-md-6">
                     <form asp-controller="Cart" asp-action="Checkout" method="post">
                         <div class="row">
+                            <input type="hidden" name="@Model.Condition" value="Sipariş Alındı"/>
                             <div class="col-lg-6">
                                 <div class="edit_input">
                                     <p>Adınız<span>*</span></p>
@@ -52,7 +53,7 @@
                             <div class="col-6">
                                 <div class="edit_input">
                                     <p>İlçe<span>*</span></p>
-                                    <input type="text"  placeholder="İlçe giriniz..." class="edit_input__add">
+                                    <input type="text" asp-for="@Model.District" placeholder="İlçe giriniz..." class="edit_input__add">
                                 </div>
                             </div>
                         </div>

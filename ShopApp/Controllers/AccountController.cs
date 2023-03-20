@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ShopApp.Business.Abstract;
 using ShopApp.Business.Concrete;
 using ShopApp.DataAccess.Concrete.EfCore;
@@ -19,7 +20,7 @@ namespace ShopApp.WebUI.Controllers
         private readonly IEmailSenderService _IEmailSederService;
         CartManager _cartManager = new CartManager(new EfCoreCartDal());
 
-        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IEmailSenderService emailSenderService,RoleManager<AppRole> roleManager)
+        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IEmailSenderService emailSenderService, RoleManager<AppRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -38,17 +39,24 @@ namespace ShopApp.WebUI.Controllers
 
         [HttpPost]
 
-        
+
         public async Task<IActionResult> RegisterUser(RegisterModel model)
         {
             if (ModelState.IsValid)
             {
+
+
+
                 AppUser user = new AppUser()
                 {
                     Email = model.Email,
                     UserName = model.UserName,
                     FullName = model.FullName,
                 };
+                if (model.Password == null)
+                {
+                    return View(model);
+                }
 
                 var result = await _userManager.CreateAsync(user, model.Password);
 
@@ -98,10 +106,7 @@ namespace ShopApp.WebUI.Controllers
             return View(model);
         }
 
-
-
-
-            [HttpGet]
+        [HttpGet]
         public IActionResult Register()
         {
             return View(new RegisterModel());
@@ -356,7 +361,7 @@ namespace ShopApp.WebUI.Controllers
 
 
         }
-
+        [HttpGet]
         public IActionResult ResetPassword(string token)
         {
             if (token == null)
@@ -378,13 +383,13 @@ namespace ShopApp.WebUI.Controllers
                 Message = "Şifeyi yenileyebilirsiniz",
                 Css = "warning"
             });
-            return RedirectToAction("Login", "Account");
+            return View(model);
         }
 
         [HttpPost]
         public async Task<IActionResult> ResetPassword(ResetPasswordModel model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return View(model);
 
@@ -411,7 +416,7 @@ namespace ShopApp.WebUI.Controllers
                     Message = "Şifre yenileme işlemi başarıyla gerçekleşti",
                     Css = "success"
                 });
-                return RedirectToAction("Login", "Home");
+                return RedirectToAction("Login", "Account");
             }
             TempData.Put("Message", new ResultMessage()
             {
@@ -420,6 +425,56 @@ namespace ShopApp.WebUI.Controllers
                 Css = "error"
             });
             return View(model);
+        }
+
+
+        public async Task< IActionResult> MyAccount(int id)
+        {
+            var user = await _userManager.FindByIdAsync(Convert.ToString(id));
+
+            var values = new AppUserModel()
+            {
+                Id = user.Id,
+                FullName = user.FullName,
+                UserName = user.UserName,
+                Email = user.Email,
+                PhoneNumber = user.PhoneNumber,
+                SellerNumber = user.SellerNumber,
+            };
+
+            return View(values);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> MyAccount(AppUserModel model)
+        {
+            var user = await _userManager.FindByIdAsync(Convert.ToString(model.Id));
+
+            if (user != null)
+            {
+                user.FullName = model.FullName;
+                user.UserName = model.UserName;
+                user.Email = model.Email;
+                user.PhoneNumber = model.PhoneNumber;
+                user.SellerNumber = model.SellerNumber;
+
+                await _userManager.UpdateAsync(user);
+                TempData.Put("Message", new ResultMessage()
+                {
+                    Title = "Başarılı",
+                    Message = "Kullanıcı bilgileri başarıyla güncellendi",
+                    Css = "succes"
+                });
+                return RedirectToAction("Index", "Home");
+            }
+
+            TempData.Put("Message", new ResultMessage()
+            {
+                Title = "Hata",
+                Message = "Kullanıcı bilgleri güncellenemedi lütfen bilglerliniz gözden geçiriniz",
+                Css = "error"
+            });
+            return RedirectToAction("Account","MyAccount",model);
         }
     }
 }

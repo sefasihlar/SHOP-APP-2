@@ -16,7 +16,6 @@ namespace ShopApp.DataAccess.Concrete.EfCore
                     .ToList();
             }
         }
-
         public List<Order> GetOrders(string? userId)
         {
             using (var context = new ShopContext())

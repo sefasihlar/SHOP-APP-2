@@ -5,6 +5,8 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
+<!-- Hero Section End -->
+<!-- Last Order List Begin-->
 <div class="container">
     <h2 class="text-center"><strong>Son Siparişler</strong></h2><br>
     <div class="row">
@@ -19,6 +21,7 @@
                     <th> Adres</th>
                     <th>Tarih</th>
                     <th>Ödeme Id</th>
+                    <th>Müşteri Türü</th>
                     <th>Görüntüle</th>
                     </thead>
                     <tbody>
@@ -30,8 +33,28 @@
                                 <td>@item.Phone</td>
                                 <td>@item.Email</td>
                                 <td>@item.Address</td>
-                                <td>@item.OrderTime.ToLongDateString()</td>
-                                <td>@item.PaymentId</td>
+                                <td>@item.OrderTime.ToString("mm:HH dd.MM.yyyy")</td>
+                                <td>
+                                    @if (item.PaymentId != null)
+                                    {
+                                        <strong style="color:green">@item.PaymentId</strong>
+
+                                    }
+                                    else
+                                    {
+                                        <strong style="color:red">Ödeme Yapılmadı</strong>
+                                    }
+                                </td>
+                                <td>
+                                    @if (item.PaymentId == null)
+                                    {
+                                        <strong>Bayi</strong>
+                                    }
+                                    else
+                                    {
+                                        <strong>Kullanıcı</strong>
+                                    }
+                                </td>
                                 <td>
                                     <a href="/admin/OrderDetails/@item.Id" class="btn btn-link badge-primary btn-pill btn-sm fw-bold">Detay</a>
                                 </td>

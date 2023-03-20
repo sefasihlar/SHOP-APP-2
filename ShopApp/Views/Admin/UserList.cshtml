@@ -1,0 +1,69 @@
+﻿@model ShopApp.WebUI.Models.AppUserListModel
+@{
+    ViewData["Title"] = "UserList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="container">
+    <h2 class="text-center"><strong>Müşteriler</strong></h2><br>
+    <div class="row">
+        <div class="col-12">
+            <div class=" tablo row">
+                <table class="table">
+                    <thead>
+                    <th>Id</th>
+                    <th> Ad-Soyad</th>
+                    <th> Kullanıcı Adı</th>
+                    <th> Email</th>
+                    <th>Telefon</th>
+                    <th>Müşteri Türü</th>
+                    <th>Hesap Durum</th>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Users)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.FullName</td>
+                                <td>@item.UserName</td>
+                                <td>@item.Email</td>
+                              
+                                <td>@item.PhoneNumber</td>
+                                <td>
+                                    @if (item.SellerNumber != null)
+                                    {
+                                        <strong style="color:orange">Bayi</strong>
+                                    }
+                                    else
+                                    {
+                                        <strong style="color:blue">Kullanıcı</strong>
+                                    }
+                                </td>
+                                
+                                <td>
+                                    @if (item.EmailConfirmed==true)
+                                    {
+                                        <strong style="color:forestgreen">Onaylandı</strong>
+                                    }
+                                    else
+                                    {
+                                        <strong style="color:red">Onaylanmadı</strong>
+                                    }
+
+                                </td>
+                            </tr>
+
+                        }
+
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>

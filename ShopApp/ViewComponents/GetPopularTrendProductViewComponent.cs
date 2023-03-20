@@ -5,7 +5,7 @@ using ShopApp.WebUI.Models;
 
 namespace ShopApp.WebUI.ViewComponents
 {
-    public class GetPopularTrendProductViewComponent:ViewComponent
+    public class GetPopularTrendProductViewComponent : ViewComponent
     {
         ProductManager _productManager = new ProductManager(new EfCoreProductDal());
         public IViewComponentResult Invoke()
@@ -13,7 +13,7 @@ namespace ShopApp.WebUI.ViewComponents
             return View(new ProductModel()
             {
                 //categorilerden hangisini seçildigini bulmak için yapılan işlem
-                Products = _productManager.GetPopularProduct().ToList(),
+                Products = _productManager.GetALl().Where(x => x.Price <= 250).ToList(),
             });
         }
     }

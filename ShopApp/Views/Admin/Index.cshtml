@@ -22,30 +22,32 @@
                     <th>Tarih</th>
                     <th>Ödeme Id</th>
                     <th>Müşteri Türü</th>
+                    <th>Sipariş Durumu</th>
                     <th>Görüntüle</th>
-                </thead>
+                    </thead>
                     <tbody>
                         @foreach (var item in Model.Orders)
                         {
-                             <tr>
+                            <tr>
                                 <td>@item.OrderNumber</td>
                                 <td>@item.FistName @item.LastName</td>
                                 <td>@item.Phone</td>
                                 <td>@item.Email</td>
                                 <td>@item.Address</td>
-                                <td>@item.OrderTime.ToString("mm:HH dd.MM.yyyy")</td>
+                                <td>@item.OrderTime.ToString("mm:HH dddd, dd MMMM yyyy")</td>
                                 <td>
-                                    @if (item.PaymentId!=null)
+                                    @if (item.PaymentId != null)
                                     {
-                                          @item.PaymentId
+                                        <strong style="color:green">@item.PaymentId</strong>
+
                                     }
                                     else
                                     {
-                                    <strong style="color:red">Ödeme Yapılmadı</strong>
+                                        <strong style="color:red">Ödeme Yapılmadı</strong>
                                     }
                                 </td>
                                 <td>
-                                    @if (item.PaymentId==null)
+                                    @if (item.PaymentId == null)
                                     {
                                         <strong>Bayi</strong>
                                     }
@@ -55,12 +57,38 @@
                                     }
                                 </td>
                                 <td>
+                                    @if (item.Condition == "Sipariş Alındı")
+                                    {
+                                        <strong style="color:blue">@item.Condition</strong>
+                                    }
+
+                                    else if (item.Condition == "Hazırlanıyor")
+                                    {
+                                        <strong style="color:turquoise">@item.Condition</strong>
+                                    }
+                                    else if (item.Condition == "Kargoya Verildi")
+                                    {
+                                        <strong style="color:orange">@item.Condition</strong>
+                                    }
+                                    else if (item.Condition == "Sipariş Tamamlandı")
+                                    {
+                                        <strong style="color:green">@item.Condition</strong>
+                                    }
+                                    else if (item.Condition == "Sipariş İptal")
+                                    {
+                                        <strong style="color:red">@item.Condition</strong>
+                                    }
+
+                                    
+
+                                </td>
+                                <td>
                                     <a href="/admin/OrderDetails/@item.Id" class="btn btn-link badge-primary btn-pill btn-sm fw-bold">Detay</a>
                                 </td>
                             </tr>
-                        
+
                         }
-                       
+
                     </tbody>
 
                 </table>

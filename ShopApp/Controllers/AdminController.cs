@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using ShopApp.Business.Concrete;
 using ShopApp.DataAccess.Concrete.EfCore;
 using ShopApp.Entites;
@@ -10,12 +10,20 @@ using System.Data;
 
 namespace ShopApp.WebUI.Controllers
 {
-	[Authorize(Roles = "Admin")]
-	public class AdminController : Controller
+    [Authorize(Roles = "Admin")]
+    public class AdminController : Controller
     {
+        private readonly UserManager<AppUser> _userManager;
+        private readonly RoleManager<AppRole> _roleManager;
         ProductManager ip = new ProductManager(new EfCoreProductDal());
         CategoryManager _category = new CategoryManager(new EfCoreCategoryDal());
         OrderManager _orderManager = new OrderManager(new EfCoreOrderDal());
+
+        public AdminController(UserManager<AppUser> userManager, RoleManager<AppRole> roleManager)
+        {
+            _userManager = userManager;
+            _roleManager = roleManager;
+        }
 
         public IActionResult AdminHomePage()
         {
@@ -28,9 +36,12 @@ namespace ShopApp.WebUI.Controllers
 
         public IActionResult OrderList()
         {
+            var orders = _orderManager.GetAll()
+                .OrderByDescending(o => o.Id) // Id özelliğine göre ters sırala
+                .Select(o => o); // Siparişleri ters çevir
             return View(new OrderInfoListModel()
             {
-                Orders = _orderManager.GetAll()
+                Orders = orders.ToList()
             });
         }
 
@@ -45,9 +56,12 @@ namespace ShopApp.WebUI.Controllers
 
         public IActionResult Index()
         {
+            var orders = _orderManager.GetAll()
+             .OrderByDescending(o => o.Id) // Id özelliğine göre ters sırala
+             .Select(o => o); // Siparişleri ters çevir
             return View(new OrderInfoListModel()
             {
-                Orders = _orderManager.GetAll()
+                Orders = orders.ToList()
             });
         }
         [HttpGet]
@@ -263,13 +277,13 @@ namespace ShopApp.WebUI.Controllers
         [HttpGet]
         public IActionResult CategoryEdit(int Id)
         {
-            if (Id==0)
+            if (Id == 0)
             {
                 return View();
             }
             var values = _category.GetByIdWithProducuts(Id);
 
-            
+
 
             var products = new CategoryModel()
             {
@@ -348,7 +362,24 @@ namespace ShopApp.WebUI.Controllers
                 Message = "İlişki silme işlemi başarılı bir şekilde gerçekleşti.Ürün tamamen değil sadece bu categoriden silindi",
                 Css = "success"
             });
-            return RedirectToAction("CategoryList","Admin");
+            return RedirectToAction("CategoryList", "Admin");
         }
+
+
+        public IActionResult UserList()
+        {
+            var values = new AppUserListModel()
+            {
+                Users = _userManager.Users.ToList(),
+                //Roler burada listelenmeyecek istinildiği  zaman filtreleme uygulanabilir
+                Roles = _roleManager.Roles.ToList(),
+            };
+
+           return View(values);
+                  
+        }
+
+
+
     }
 }

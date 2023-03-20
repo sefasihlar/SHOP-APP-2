@@ -21,9 +21,7 @@
 
                         @if (User.Identity.IsAuthenticated)
                         {
-                            <div class="header__top__right__auth">
-                                <a asp-controller="Account" asp-action="Register"><i class="fa fa-user"></i>Hesabım  </a>
-                            </div>
+                            @await Component.InvokeAsync("GetUser")
 
                             <div class="header__top__right__auth">
                                 <a asp-controller="Account" asp-action="Logout"><i class="fa fa-sign-out"></i> Çıkış</a>

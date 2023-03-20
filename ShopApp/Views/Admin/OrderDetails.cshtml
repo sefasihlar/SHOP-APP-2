@@ -8,124 +8,194 @@
 <section class="checkout spad">
     <div class="container">
         <div class="row">
+            @foreach (var item in Model)
+            {
+                <form asp-controller="Cart" asp-action="UpdateOrder" method="post">
+                    <div class="container">
+                        <input type="hidden" name="Id" value="@item.Id" />
+                        <select id="order-status" name="Condition">
+                            @if (item.Condition == "Sipariş Alındı")
+                            {
+                                <option value="Sipariş Alındı" selected>Sipariş Alındı</option>
+                                <option value="Hazırlanıyor" >Hazırlanıyor</option>
+                                <option value="Kargoya Verildi">Kargoya Verildi</option>
+                                <option value="Sipariş Tamamlandı">Tamamlandı</option>
+                                <option value="Sipariş İptal">İptal</option>
+                            }
+                            else if (item.Condition == "Hazırlanıyor")
+                            {
+                                <option value="Sipariş Alındı" >Sipariş Alındı</option>
+                                <option value="Hazırlanıyor" selected>Hazırlanıyor</option>
+                                <option value="Kargoya Verildi">Kargoya Verildi</option>
+                                <option value="Sipariş Tamamlandı">Sipariş Tamamlandı</option>
+                                <option value="Sipariş İptal">İptal</option>
+                            }
+                            else if (item.Condition == "Kargoya Verildi")
+                            {
+                                <option value="Sipariş Alındı" >Sipariş Alındı</option>
+                                <option value="Hazırlanıyor">Hazırlanıyor</option>
+                                <option value="Kargoya Verildi" selected>Kargoya Verildi</option>
+                                <option value="Sipariş Tamamlandı">Sipariş Tamamlandı</option>
+                                <option value="Sipariş İptal">İptal</option>
+                            }
+
+                            else if (item.Condition == "Sipariş Tamamlandı")
+                            {
+                                <option value="Sipariş Alındı">Sipariş Alındı</option>
+                                <option value="Hazırlanıyor">Hazırlanıyor</option>
+                                <option value="Kargoya Verildi" >Kargoya Verildi</option>
+                                <option value="Sipariş Tamamlandı" selected>Sipariş Tamamlandı</option>
+                                <option value="Sipariş İptal">İptal</option>
+                            }
+
+                            else if (item.Condition == "Sipariş İptal")
+                            {
+                                <option value="Sipariş Alındı">Sipariş Alındı</option>
+                                <option value="Hazırlanıyor">Hazırlanıyor</option>
+                                <option value="Kargoya Verildi">Kargoya Verildi</option>
+                                <option value="Sipariş Tamamlandı" >Sipariş Tamamlandı</option>
+                                <option value="Sipariş İptal" >İptal</option>
+                            }
+
+                            else
+                            {
+                                <option value="Sipariş Alındı" selected>Sipariş Alındı</option>
+                                <option value="Hazırlanıyor">Hazırlanıyor</option>
+                                <option value="Kargoya Verildi">Kargoya Verildi</option>
+                                <option value="Sipariş Tamamlandı">Sipariş Tamamlandı</option>
+                                <option value="Sipariş İptal">İptal</option>
+                            }
+
+
+                                </select>
+                        <button class="btn btn-primary ml-5" type="submit">Güncelle</button>
+                    </div>
+                    <br>
+              
+                </form>
+            }
         </div>
         <div class="checkout__form">
+     
 
-            <form action="#">
-                <div class="row">
 
-                    <div class="col-lg-6 col-md-6">
-                        <h4>Müşteri Bilgileri</h4>
+            <div class="row">
 
+                <div class="col-lg-6 col-md-6">
+                    <h4>Müşteri Bilgileri</h4>
+
+                    @foreach (var item in Model)
+                    {
+
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <div class="edit_input">
+                                    <p><strong>Ad</strong><span></span></p>
+                                    <span>@item.FistName</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="edit_input">
+                                    <p><strong> Soyad</strong><span></span></p>
+                                    <span>@item.LastName</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="edit_input">
+                                    <p><strong>E-posta</strong><span></span></p>
+                                    <span>@item.Email</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="edit_input">
+                                    <p><strong>Telefon</strong><span></span></p>
+                                    <span>@item.Phone</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="edit_input">
+                                    <p><strong> İl</strong><span></span></p>
+                                    <span>@item.City</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="edit_input">
+                                    <p><strong> İlçe</strong><span></span></p>
+                                    <span> @item.District</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit_input">
+                            <p><strong> Adres</strong><span></span></p>
+                            <span>@item.Address</span>
+                        </div>
+                    }
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="row">
+                        <h4>
+                            <strong>Sipariş Edilen Ürünler</strong>
+                        </h4>
+
+                    </div>
+                    <div class="tablo row">
                         @foreach (var item in Model)
                         {
-                            <div class="row">
+                            var hesap = item.OrderItems.Sum(x => x.Price * x.Quantity);
 
-                                <div class="col-lg-6">
-                                    <div class="edit_input">
-                                        <p><strong>Ad</strong><span></span></p>
-                                        <span>@item.FistName</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="edit_input">
-                                        <p><strong> Soyad</strong><span></span></p>
-                                        <span>@item.LastName</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="edit_input">
-                                        <p><strong>E-posta</strong><span></span></p>
-                                        <span>@item.Email</span>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="edit_input">
-                                        <p><strong>Telefon</strong><span></span></p>
-                                        <span>@item.Phone</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="edit_input">
-                                        <p><strong> İl</strong><span></span></p>
-                                        <span>Hatay düzelecek</span>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="edit_input">
-                                        <p><strong> İlçe</strong><span></span></p>
-                                        <span> Muratpaşa</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="edit_input">
-                                <p><strong> Adres</strong><span></span></p>
-                                <span>@item.Address</span>
-                            </div>
+                            <strong><span style="color:darkgreen">Genel Toplam Tutar:@hesap ₺</span></strong>
+
                         }
-                    </div>
 
-                    <div class="col-lg-6">
-                        <div class="row">
-                            <h4>
-                                <strong>Sipariş Edilen Ürünler</strong>
-                            </h4>
-                        </div>
-                        <div class="tablo row">
-                            @foreach (var item in Model)
-                            {
-                                var hesap = item.OrderItems.Sum(x => x.Price * x.Quantity);
-
-                                <strong><span style="color:darkgreen">Genel Toplam Tutar:@hesap ₺</span></strong>
-
-                            }
-                            <br />
-                            <br />
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Numarası</th>
-                                        <th>Resim</th>
-                                        <th>Adı</th>
-                                        <th>Miktar</th>
-                                        <th>Fiyat</th>
-                                        <th></th>
-                                        <th>Tutar</th>
-                                        <th></th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach (var item in Model)
+                        <br />
+                        <br />
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Numarası</th>
+                                    <th>Resim</th>
+                                    <th>Adı</th>
+                                    <th>Miktar</th>
+                                    <th>Fiyat</th>
+                                    <th></th>
+                                    <th>Tutar</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    @foreach (var values in item.OrderItems)
                                     {
-                                        @foreach (var values in item.OrderItems)
-                                        {
-                                            var TotolPrice = values.Price * values.Quantity;
-                                            <tr>
-                                                <td>@values.Id</td>
-                                                <td><img width="35px" src="/Theme/img/product/@values.Product.ImageUrl" alt=""></td>
-                                                <td>@values.Product.Name</td>
-                                                <td>@values.Quantity</td>
-                                                <td>@values.Product.Price</td>
-                                                <td></td>
-                                                <td><span></span>@TotolPrice</td>
-                                            </tr>
-                                        }
-                                        
+                                        var TotolPrice = values.Price * values.Quantity;
+                                        <tr>
+                                            <td>@values.Id</td>
+                                            <td><img width="35px" src="/Theme/img/product/@values.Product.ImageUrl" alt=""></td>
+                                            <td>@values.Product.Name</td>
+                                            <td>@values.Quantity</td>
+                                            <td>@values.Product.Price</td>
+                                            <td></td>
+                                            <td><span></span>@TotolPrice</td>
+                                        </tr>
                                     }
-                                    
-                                </tbody>
 
-                            </table>
-                        </div>
+                                }
 
+                            </tbody>
+
+                        </table>
                     </div>
+
                 </div>
-            </form>
+            </div>
+
         </div>
     </div>
 </section>

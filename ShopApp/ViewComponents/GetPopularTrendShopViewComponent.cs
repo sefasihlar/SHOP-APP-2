@@ -5,7 +5,7 @@ using ShopApp.WebUI.Models;
 
 namespace ShopApp.WebUI.ViewComponents
 {
-    public class GetPopularTrendShopViewComponent:ViewComponent
+    public class GetPopularTrendShopViewComponent : ViewComponent
     {
         ProductManager _productManager = new ProductManager(new EfCoreProductDal());
         public IViewComponentResult Invoke()

@@ -1,4 +1,5 @@
-﻿@model ShopApp.WebUI.Models.LoginModel
+﻿@using ShopApp.WebUI.Models;
+@model ShopApp.WebUI.Models.LoginModel
 @{
     ViewData["Title"] = "Login";
     Layout = null;
@@ -17,7 +18,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mutlu Baharat</title>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 
@@ -123,6 +126,10 @@
             </div>
         </div>
     </header>
+    @if (TempData["message"] != null)
+    {
+        <partial name="_resultMessage" model="@(TempData.Get<ResultMessage>("Message"))" />
+    }
     <div class="wrapper fadeInDown">
         <div id="formContent">
 
@@ -167,6 +174,7 @@
             <!-- Remind Passowrd -->
             <div id="formFooter">
                 <a style="margin:10px 30px 0px 15px" asp-controller="Account" asp-action="ForgotPassword">Şifrenimi Unuttun ?</a>
+                <a style="margin:10px 30px 0px 15px" asp-controller="Account" asp-action="Kayıt">Kayıt Ol</a>
             </div>
 
         </div>

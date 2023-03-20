@@ -1,4 +1,5 @@
-﻿using System.Linq.Expressions;
+﻿using ShopApp.Entites;
+using System.Linq.Expressions;
 
 namespace ShopApp.DataAccess.Abstract
 {

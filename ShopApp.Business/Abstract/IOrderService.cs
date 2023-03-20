@@ -7,7 +7,7 @@ namespace ShopApp.Business.Abstract
         void Create(Order entity);
         List<Order> GetWithOrderId(int orderId);
         Order GetById(int id);
-
+        void Update(Order entity);
         List<Order> GetAllOrders();
         List<Order> GetOrders(string? userId);
     }

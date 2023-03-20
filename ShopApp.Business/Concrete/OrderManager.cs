@@ -42,5 +42,10 @@ namespace ShopApp.Business.Concrete
         {
             return _orderDal.GetWithOrderId(orderId);
         }
+
+        public void Update(Order entity)
+        {
+            _orderDal.Update(entity);
+        }
     }
 }

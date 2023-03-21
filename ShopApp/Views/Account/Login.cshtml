@@ -61,7 +61,7 @@
             <ul>
                 <li class="active"><a asp-controller="Home" asp-action="Index">Anasayfa</a></li>
                 <li><a asp-controller="Shop" asp-action="AllList">Alışveriş</a></li>
-                <li><a href="./contact.html">İletişim</a></li>
+                <li><a asp-controller="Home" asp-action="Contact">İletişim</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -116,9 +116,9 @@
                 <div class="col-lg-9">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Anasayfa</a></li>
-                            <li><a href="./shop-grid.html">Alışveriş</a></li>
-                            <li><a href="./contact.html">İletişim</a></li>
+                            <li class="active"><a asp-controller="Home" asp-action="Index">Anasayfa</a></li>
+                            <li><a asp-controller="Shop" asp-action="AllList">Alışveriş</a></li>
+                            <li><a asp-controller="Home" asp-action="Contact">İletişim</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -174,7 +174,7 @@
             <!-- Remind Passowrd -->
             <div id="formFooter">
                 <a style="margin:10px 30px 0px 15px" asp-controller="Account" asp-action="ForgotPassword">Şifrenimi Unuttun ?</a>
-                <a style="margin:10px 30px 0px 15px" asp-controller="Account" asp-action="Kayıt">Kayıt Ol</a>
+                <a style="margin:10px 30px 0px 15px" asp-controller="Account" asp-action="RegisterUser">Kayıt Ol</a>
             </div>
 
         </div>

@@ -18,6 +18,12 @@ namespace ShopApp.WebUI.Controllers
         //AllList/category?page = 1
         public async Task<IActionResult> AllList(String category, int page = 1)
         {
+            var ProductsCount = new ProductModel()
+            {
+                Products = ip.GetALl()
+            };
+
+            ViewBag.ProductsCount = ProductsCount.Products.Count();
 
             const int pageSize = 9;
             return View(new ProductModel()

@@ -39,10 +39,6 @@
             <a href="#"><img src="img/logo.png" alt=""></a>
         </div>
         <div class="humberger__menu__widget">
-
-            <div class="header__top__right__auth">
-                <a href="#"><i class="fa fa-user"></i> Login</a>
-            </div>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
@@ -54,6 +50,25 @@
                 }
            
                 <li><a asp-controller="Home" asp-action="Contact">İletişim</a></li>
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    @await Component.InvokeAsync("GetUser")
+
+                    <div class="header__top__right__auth">
+                        <a asp-controller="Account" asp-action="Logout"><i class="fa fa-sign-out"></i> Çıkış</a>
+                    </div>
+                }
+                else
+                {
+                    <div class="header__top__right__auth">
+                        <a asp-controller="Account" asp-action="RegisterUser" style="margin-right:10px"><i class="fa fa-plus"></i>Kayıt Ol</a>
+                    </div>
+
+                    <div class="header__top__right__auth">
+                        <a asp-controller="Account" asp-action="Login"><i class="fa fa-user"></i>   Giriş</a>
+                    </div>
+                }
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -62,8 +77,8 @@
         </div>
         <div class="humberger__menu__contact">
             <ul>
-                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                <li>Free Shipping for all Order of $99</li>
+                <li><i class="fa fa-envelope"></i>mutlubaharat@gmail.com</li>
+                <li>99₺ ve üzeri kargo bedava</li>
             </ul>
         </div>
     </div>

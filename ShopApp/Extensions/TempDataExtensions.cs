@@ -12,9 +12,12 @@ namespace ShopApp.WebUI.Extensions
 
         public static T Get<T>(this ITempDataDictionary tempData, string key) where T : class
         {
-            object O;
-            tempData.TryGetValue(key, out O);
-            return O == null ? null : JsonConvert.DeserializeObject<T>((String)O);
+            if (tempData.TryGetValue(key, out object o) && o is string s && !string.IsNullOrEmpty(s))
+            {
+                return JsonConvert.DeserializeObject<T>(s);
+            }
+
+            return null;
         }
     }
 }

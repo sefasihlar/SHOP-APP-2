@@ -28,4 +28,14 @@
         </tbody>
     </table>
     <br />
+    @if (Model.Condition == "Sipariş Alındı")
+    {
+        <form asp-controller="Cart" asp-action="UpdateOrder" method="post">
+            <input type="hidden" value="Sipariş İptal" name="Condition" />
+            <input type="hidden" value="@Model.Id" name="Id" />
+            <input type="hidden" value="@Model.Phone" asp-for="@Model.Phone" />
+            <button type="submit" class="btn btn-danger">Iptal</button>
+        </form>
+    }
+    <br />
 </div>

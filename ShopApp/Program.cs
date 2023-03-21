@@ -120,7 +120,7 @@ app.UseMvc(Route =>
 {
     Route.MapRoute(
        name: "adminProducts",
-       template: "admin/products",
+       template: "admin/orders",
        defaults: new { controller = "Admin", action = "Index" }
        );
 

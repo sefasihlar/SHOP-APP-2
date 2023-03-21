@@ -2,6 +2,8 @@
 @{
     ViewData["Title"] = "AllList";
     Layout = "~/Views/Shared/_Layout.cshtml";
+   
+
 }
 
 <section class="breadcrumb-section set-bg" data-setbg="/Theme/img/baharatBanner.jpg">
@@ -45,7 +47,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4">
                             <div class="filter__found">
-                                <h6><span>@Model.Products.Count()</span> Ürün Bulundu</h6>
+                                <h6><span></span>@ViewBag.ProductsCount Ürün Bulundu</h6>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-3">

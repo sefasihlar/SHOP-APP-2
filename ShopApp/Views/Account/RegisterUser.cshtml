@@ -132,11 +132,13 @@
                 </div>
                 <div class="col-lg-6">
                     <nav class="header__menu">
-                        <ul>
-                            <li class="active"><a href="./index.html">Anasayfa</a></li>
-                            <li><a href="./shop-grid.html">Alışveriş</a></li>
-                            <li><a href="./contact.html">İletişim</a></li>
-                        </ul>
+                        <nav class="humberger__menu__nav mobile-menu">
+                            <ul>
+                                <li class="active"><a asp-controller="Home" asp-action="Index">Anasayfa</a></li>
+                                <li><a asp-controller="Shop" asp-action="AllList">Alışveriş</a></li>
+                                <li><a asp-controller="Home" asp-action="Contact">İletişim</a></li>
+                            </ul>
+                        </nav>
                     </nav>
                 </div>
             </div>
@@ -167,7 +169,8 @@
                              <span asp-validation-for="FullName" class="text-danger"></span>
                         <input type="text" class="fadeIn third" asp-for="@Model.UserName" placeholder="Kullanıcı Adınız..."><br />
                            <span asp-validation-for="UserName" class="text-danger"></span>
-                        <input type="text" class="fadeIn third" asp-for="@Model.Phone" placeholder="Telefon Numaranız...">
+                        <input type="text" class="fadeIn third" asp-for="@Model.Phone" placeholder="Telefon Numaranız..."><br />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
                     </div>
                     <div class="col-6">
                         <input type="text" class="fadeIn third" asp-for="Email" placeholder="E-Posta Adresiniz..."><br />

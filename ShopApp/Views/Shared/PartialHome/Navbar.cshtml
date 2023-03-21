@@ -45,18 +45,22 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 text-center">
+            <div class="col-lg-2 text-center">
                 <div class="header__logo">
-                    <a href="./index.html"><img src="/Theme/img/logo.png" alt=""></a>
+                    <a href="./index.html"><img src="/Theme/img/logo.png" alt="" style="margin-top:0px"></a>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <nav class="header__menu">
                     <ul>
                         <li class="active"><a asp-controller="Home" asp-action="Index">Anasayfa</a></li>
 
                         <li><a asp-controller="Shop" asp-action="AllList">Alışveriş</a></li>
                         <li><a asp-controller="Home" asp-action="Contact">İletişim</a></li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li><a asp-controller="Cart" asp-action="GetOrders">Siparişlerim</a></li>
+                        }
                         @if (User.IsInRole("Admin"))
                         {
                             <li><a asp-controller="Admin" asp-action="Index">Admin</a></li>
@@ -66,7 +70,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-2">
                 <div class="header__cart">
                     @if (User.Identity.IsAuthenticated)
                     {

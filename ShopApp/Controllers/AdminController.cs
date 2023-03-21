@@ -275,15 +275,13 @@ namespace ShopApp.WebUI.Controllers
         }
 
         [HttpGet]
-        public IActionResult CategoryEdit(int Id)
+        public IActionResult CategoryEdit(int id)
         {
-            if (Id == 0)
+            if (id == 0)
             {
                 return View();
             }
-            var values = _category.GetByIdWithProducuts(Id);
-
-
+            var values = _category.GetByIdWithProducuts(id);
 
             var products = new CategoryModel()
             {

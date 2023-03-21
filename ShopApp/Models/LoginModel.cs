@@ -5,10 +5,10 @@ namespace ShopApp.WebUI.Models
 {
     public class LoginModel
     {
-
+        [Required(ErrorMessage = "Kullanıcı adı boş geçilemez.")]
         public string UserName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Şifre boş geçilemez.")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
     }

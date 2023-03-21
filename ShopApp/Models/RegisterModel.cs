@@ -10,6 +10,7 @@ namespace ShopApp.WebUI.Models
         [Required(ErrorMessage = "Ad ve soyad alanı boş bırakılamaz.")]
         public string FullName { get; set; }
 
+        [Required(ErrorMessage = "Kullancı adı boş bırakılamaz")]
         [RegularExpression(@"^[a-zA-Z0-9_ğüşıöçĞÜŞİÖÇ]+$",
          ErrorMessage = "Kullanıcı adı yalnızca harf, rakam içerebilir.Boşluk içermemeli.")]
         public string UserName { get; set; }
